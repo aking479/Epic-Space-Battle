@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<comment-long comment="false" x="26" y="40">
+<int id="0" val="You need to create two Game Attributes below. The first should be called GameStart. It is a Boolean-type attribute. Next, you will need to create a Game Attribute called Score, a number-type attribute. Check the image on StencylForge to see how to set up these Game Attributes. "/>
+</comment-long>
+<if comment="false" x="26" y="120">
+<group id="-1">
+<set-val-62-1 comment="false" x="37" y="145">
+<int id="0" val="0"/>
+</set-val-62-1>
+<set-game-val-0 comment="false" x="37" y="165">
+<get-val-62-1 comment="false" id="0" x="0" y="0"/>
+</set-game-val-0>
+</group>
+<get-game-val-3 comment="false" id="0" x="0" y="0"/>
+</if>
+<else-if comment="false" x="26" y="202">
+<group id="-1">
+<set-val-62-1 comment="false" x="37" y="232">
+<get-game-val-0 comment="false" id="0" x="0" y="0"/>
+</set-val-62-1>
+<set-val-62-6 comment="false" x="37" y="257">
+<get-val-62-1 comment="false" id="0" x="0" y="0"/>
+</set-val-62-6>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<get-game-val-3 comment="false" id="0" x="0" y="0"/>
+</not>
+</else-if>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="322">
+<group id="-1">
+<set-val-62-6 comment="false" x="26" y="347">
+<get-val-62-1 comment="false" id="0" x="0" y="0"/>
+</set-val-62-6>
+<set-game-val-0 comment="false" x="26" y="372">
+<get-val-62-6 comment="false" id="0" x="0" y="0"/>
+</set-game-val-0>
+</group>
+</step>
+</group>
+<group id="2">
+<draw comment="false" x="15" y="425">
+<group id="-1"/>
+</draw>
+</group>
+<group id="3">
+<receive-message comment="false" x="15" y="498">
+<group id="-1">
+<increment comment="false" x="26" y="523">
+<int id="0" val="1"/>
+<get-val-62-2 comment="false" id="1" x="0" y="0"/>
+</increment>
+<set-val-62-6 comment="false" x="26" y="555">
+<get-val-62-1 comment="false" id="0" x="0" y="0"/>
+</set-val-62-6>
+</group>
+<int id="0" val="addPointsToScoreA"/>
+</receive-message>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="608">
+<group id="-1">
+<increment comment="false" x="26" y="633">
+<int id="0" val="1"/>
+<get-val-62-3 comment="false" id="1" x="0" y="0"/>
+</increment>
+<set-val-62-6 comment="false" x="26" y="665">
+<get-val-62-1 comment="false" id="0" x="0" y="0"/>
+</set-val-62-6>
+</group>
+<int id="0" val="addPointsToScoreB"/>
+</receive-message>
+</group>
+<group id="5">
+<receive-message comment="false" x="15" y="718">
+<group id="-1">
+<increment comment="false" x="26" y="743">
+<int id="0" val="1"/>
+<get-val-62-4 comment="false" id="1" x="0" y="0"/>
+</increment>
+<set-val-62-6 comment="false" x="26" y="775">
+<get-val-62-1 comment="false" id="0" x="0" y="0"/>
+</set-val-62-6>
+</group>
+<int id="0" val="addPointsToScoreC"/>
+</receive-message>
+</group>
+<group id="6">
+<receive-message comment="false" x="15" y="828">
+<group id="-1">
+<increment comment="false" x="26" y="853">
+<int id="0" val="1"/>
+<get-val-62-5 comment="false" id="1" x="0" y="0"/>
+</increment>
+<set-val-62-6 comment="false" x="26" y="885">
+<get-val-62-1 comment="false" id="0" x="0" y="0"/>
+</set-val-62-6>
+</group>
+<int id="0" val="addPointsToScoreD"/>
+</receive-message>
+</group>
+<group id="7">
+<receive-message comment="false" x="15" y="938">
+<group id="-1">
+<increment comment="false" x="26" y="963">
+<int id="0" val="1"/>
+<get-val-62-12 comment="false" id="1" x="0" y="0"/>
+</increment>
+<set-val-62-6 comment="false" x="26" y="995">
+<get-val-62-1 comment="false" id="0" x="0" y="0"/>
+</set-val-62-6>
+</group>
+<int id="0" val="addPointsToScoreE"/>
+</receive-message>
+</group>
+<group id="8">
+<receive-message comment="false" x="15" y="1048">
+<group id="-1">
+<increment comment="false" x="26" y="1073">
+<int id="0" val="1"/>
+<get-val-62-8 comment="false" id="1" x="0" y="0"/>
+</increment>
+<set-val-62-6 comment="false" x="26" y="1105">
+<get-val-62-1 comment="false" id="0" x="0" y="0"/>
+</set-val-62-6>
+</group>
+<int id="0" val="addPointsToScoreG"/>
+</receive-message>
+</group>
+<group id="9">
+<receive-message comment="false" x="15" y="1158">
+<group id="-1">
+<increment comment="false" x="26" y="1183">
+<int id="0" val="1"/>
+<get-val-62-7 comment="false" id="1" x="0" y="0"/>
+</increment>
+<set-val-62-6 comment="false" x="26" y="1215">
+<get-val-62-1 comment="false" id="0" x="0" y="0"/>
+</set-val-62-6>
+</group>
+<int id="0" val="addPointsToScoreF"/>
+</receive-message>
+</group>
+<group id="10">
+<receive-message comment="false" x="15" y="1268">
+<group id="-1">
+<increment comment="false" x="26" y="1293">
+<int id="0" val="1"/>
+<get-val-62-10 comment="false" id="1" x="0" y="0"/>
+</increment>
+<set-val-62-6 comment="false" x="26" y="1325">
+<get-val-62-1 comment="false" id="0" x="0" y="0"/>
+</set-val-62-6>
+</group>
+<int id="0" val="addPointsToScoreI"/>
+</receive-message>
+</group>
+<group id="11">
+<receive-message comment="false" x="15" y="1378">
+<group id="-1">
+<increment comment="false" x="26" y="1403">
+<int id="0" val="1"/>
+<get-val-62-9 comment="false" id="1" x="0" y="0"/>
+</increment>
+<set-val-62-6 comment="false" x="26" y="1435">
+<get-val-62-1 comment="false" id="0" x="0" y="0"/>
+</set-val-62-6>
+</group>
+<int id="0" val="addPointsToScoreH"/>
+</receive-message>
+</group>
+<group id="12">
+<receive-message comment="false" x="15" y="1488">
+<group id="-1">
+<increment comment="false" x="26" y="1513">
+<int id="0" val="1"/>
+<get-val-62-11 comment="false" id="1" x="0" y="0"/>
+</increment>
+<set-val-62-6 comment="false" x="26" y="1545">
+<get-val-62-1 comment="false" id="0" x="0" y="0"/>
+</set-val-62-6>
+</group>
+<int id="0" val="addPointsToScoreJ"/>
+</receive-message>
+</group>
+<group id="-1"/>
+</groups>

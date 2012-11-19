@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <recycle comment="false" x="37" y="78">
+                            <ACTOR eid="this" id="0"/>
+                        </recycle>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="4"/>
+                        </get-xy>
+                        <int id="1" val="1"/>
+                    </lesseq>
+                </if>
+                <if comment="false" x="26" y="117">
+                    <group eventID="-1" id="-1">
+                        <recycle comment="false" x="37" y="165">
+                            <ACTOR eid="this" id="0"/>
+                        </recycle>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="4"/>
+                        </get-xy>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </screen-wh>
+                                <get-wh comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-wh>
+                            </minus>
+                            <int id="1" val="1"/>
+                        </minus>
+                    </moreeq>
+                </if>
+                <if comment="false" x="26" y="204">
+                    <group eventID="-1" id="-1">
+                        <recycle comment="false" x="37" y="242">
+                            <ACTOR eid="this" id="0"/>
+                        </recycle>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="5"/>
+                        </get-xy>
+                        <int id="1" val="1"/>
+                    </lesseq>
+                </if>
+                <if comment="false" x="26" y="281">
+                    <group eventID="-1" id="-1">
+                        <recycle comment="false" x="37" y="329">
+                            <ACTOR eid="this" id="0"/>
+                        </recycle>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="5"/>
+                        </get-xy>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </screen-wh>
+                                <get-wh comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-wh>
+                            </minus>
+                            <int id="1" val="1"/>
+                        </minus>
+                    </moreeq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

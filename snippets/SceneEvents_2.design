@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <create-actor3 comment="false" x="26" y="40">
+                    <ACTORTYPE eid="1" id="0"/>
+                    <int id="1" val="142"/>
+                    <int id="2" val="416"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <create-recycled-actor comment="false" x="26" y="40">
+                    <get-val-216-1 comment="false" id="0" x="0" y="0"/>
+                    <div comment="false" id="1" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </scene-wh>
+                        <int id="1" val="2"/>
+                    </div>
+                    <int id="2" val="-1"/>
+                    <int id="3" val="1"/>
+                </create-recycled-actor>
+            </group>
+            <int id="0" val="Spawn"/>
+        </event-custom>
+    </group>
+    <group eventID="3" id="1">
+        <dolater comment="false" x="125" y="396">
+            <group eventID="1" id="-1"/>
+            <randint comment="false" id="0" x="0" y="0">
+                <int id="0" val="0"/>
+                <int id="1" val="3"/>
+            </randint>
+            <ACTOR eid="lastcreated" id="2"/>
+        </dolater>
+    </group>
+    <group eventID="3" id="3">
+        <create-actor3 comment="false" x="351" y="146">
+            <ACTORTYPE eid="14" id="0"/>
+            <int id="1" val="1"/>
+            <int id="2" val="-10"/>
+            <int id="3" val="0"/>
+        </create-actor3>
+        <push-shove comment="false" x="351" y="173">
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="1"/>
+            <int id="2" val="0"/>
+            <int id="3" val="1"/>
+            <int id="4" val="20"/>
+        </push-shove>
+        <say-this comment="false" x="351" y="200">
+            <int id="0" val="Spawn"/>
+        </say-this>
+    </group>
+    <group eventID="3" id="-1">
+        <get-val-216-3 comment="false" x="145" y="256"/>
+        <get-val-216-3 comment="false" x="126" y="315"/>
+        <get-val-216-2 comment="false" x="431" y="287"/>
+        <get-val-216-4 comment="false" x="324" y="319"/>
+    </group>
+</groups>

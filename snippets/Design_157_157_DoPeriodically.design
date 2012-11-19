@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<collide comment="false" x="15" y="409">
+<group id="-1"/>
+</collide>
+</group>
+<group id="1">
+<step comment="false" x="15" y="336">
+<group id="-1"/>
+</step>
+</group>
+<group id="2">
+<draw comment="false" x="15" y="482">
+<group id="-1"/>
+</draw>
+</group>
+<group id="3">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<periodic comment="false" x="26" y="40">
+<group id="-1">
+<if comment="false" x="37" y="65">
+<group id="-1">
+<if comment="false" x="48" y="98">
+<group id="-1">
+<cancel comment="false" x="59" y="136"/>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<isalive comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</isalive>
+</not>
+</if>
+<else comment="false" x="48" y="168">
+<group id="-1">
+<shout comment="false" x="59" y="188">
+<ACTOR eid="this" id="0"/>
+<get-val-157-2 comment="false" id="1" x="0" y="0"/>
+</shout>
+</group>
+</else>
+</group>
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="2147483647"/>
+</hasvalue>
+</if>
+<else comment="false" x="37" y="244">
+<group id="-1">
+<cancel comment="false" x="48" y="264"/>
+</group>
+</else>
+</group>
+<get-val-157-1 comment="false" id="0" x="0" y="0"/>
+</periodic>
+</group>
+</init>
+</group>
+<group id="-1"/>
+</groups>

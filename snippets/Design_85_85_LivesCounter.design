@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<if comment="false" x="26" y="40">
+<group id="-1">
+<set-val-85-3 comment="false" x="37" y="65">
+<ACTOR eid="lastcreated" id="0"/>
+</set-val-85-3>
+<set-val-85-1 comment="false" x="37" y="92">
+<get-game-val-1 comment="false" id="0" x="0" y="0"/>
+</set-val-85-1>
+</group>
+<get-game-val-7 comment="false" id="0" x="0" y="0"/>
+</if>
+<else comment="false" x="26" y="129">
+<group id="-1">
+<set-val-85-3 comment="false" x="37" y="149">
+<ACTOR eid="lastcreated" id="0"/>
+</set-val-85-3>
+<set-val-85-1 comment="false" x="37" y="176">
+<get-val-85-2 comment="false" id="0" x="0" y="0"/>
+</set-val-85-1>
+<set-game-val-1 comment="false" x="37" y="201">
+<get-val-85-1 comment="false" id="0" x="0" y="0"/>
+</set-game-val-1>
+</group>
+</else>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="266">
+<group id="-1"/>
+</step>
+</group>
+<group id="2">
+<draw comment="false" x="15" y="339">
+<group id="-1"/>
+</draw>
+</group>
+<group id="3">
+<receive-message comment="false" x="15" y="412">
+<group id="-1">
+<if comment="false" x="26" y="437">
+<group id="-1">
+<decrement comment="false" x="37" y="467">
+<int id="0" val="1"/>
+<int id="1" val="1"/>
+</decrement>
+<say comment="false" x="37" y="494">
+<ACTOR eid="var" id="0" vid="3"/>
+<int id="1" val="Respawn on Death"/>
+<int id="2" val="respawn"/>
+</say>
+<set-game-val-1 comment="false" x="37" y="521">
+<get-val-85-1 comment="false" id="0" x="0" y="0"/>
+</set-game-val-1>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-85-1 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</more>
+</if>
+<if comment="false" x="26" y="558">
+<group id="-1">
+<scene-reload comment="false" x="37" y="588">
+<int id="0" val="0"/>
+<int id="1" val=".5"/>
+<int id="2" val="1"/>
+<int id="3" val=".5"/>
+</scene-reload>
+</group>
+<lesseq comment="false" id="0" x="0" y="0">
+<get-val-85-1 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</lesseq>
+</if>
+</group>
+<int id="0" val="loseLife"/>
+</receive-message>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="655">
+<group id="-1">
+<if comment="false" x="26" y="680">
+<group id="-1">
+<increment comment="false" x="37" y="710">
+<int id="0" val="1"/>
+<int id="1" val="1"/>
+</increment>
+<set-game-val-1 comment="false" x="37" y="737">
+<get-val-85-1 comment="false" id="0" x="0" y="0"/>
+</set-game-val-1>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<get-val-85-1 comment="false" id="0" x="0" y="0"/>
+<get-val-85-2 comment="false" id="1" x="0" y="0"/>
+</less>
+</if>
+<if comment="false" x="26" y="774">
+<group id="-1">
+<set-game-val-1 comment="false" x="37" y="804">
+<get-val-85-2 comment="false" id="0" x="0" y="0"/>
+</set-game-val-1>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-85-1 comment="false" id="0" x="0" y="0"/>
+<get-val-85-2 comment="false" id="1" x="0" y="0"/>
+</more>
+</if>
+</group>
+<int id="0" val="gainLife"/>
+</receive-message>
+</group>
+<group id="-1"/>
+</groups>

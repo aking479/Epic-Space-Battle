@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<create-actor3 comment="false" x="26" y="40">
+<ACTORTYPE eid="var" id="0" vid="4"/>
+<get-val-116-8 comment="false" id="1" x="0" y="0"/>
+<get-val-116-9 comment="false" id="2" x="0" y="0"/>
+<int id="3" val="0"/>
+</create-actor3>
+<set-val-116-1 comment="false" x="26" y="72">
+<ACTOR eid="lastcreated" id="0"/>
+</set-val-116-1>
+<ignore-screen-tolerance comment="false" x="26" y="99">
+<ACTOR eid="var" id="0" vid="1"/>
+</ignore-screen-tolerance>
+<toggle-image comment="false" x="26" y="126">
+<ACTOR eid="var" id="0" vid="1"/>
+<int id="1" val="1"/>
+</toggle-image>
+<if comment="false" x="26" y="153">
+<group id="-1">
+<dolater comment="false" x="37" y="183">
+<group id="-1">
+<moveTo comment="false" x="48" y="208">
+<ACTOR eid="var" id="0" vid="1"/>
+<get-val-116-5 comment="false" id="1" x="0" y="0"/>
+<get-val-116-6 comment="false" id="2" x="0" y="0"/>
+<get-val-116-3 comment="false" id="3" x="0" y="0"/>
+<int id="4" val="0"/>
+</moveTo>
+</group>
+<get-val-116-7 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<get-val-116-7 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="0"/>
+</more>
+</if>
+<else comment="false" x="26" y="264">
+<group id="-1">
+<moveTo comment="false" x="37" y="284">
+<ACTOR eid="var" id="0" vid="1"/>
+<get-val-116-5 comment="false" id="1" x="0" y="0"/>
+<get-val-116-6 comment="false" id="2" x="0" y="0"/>
+<get-val-116-3 comment="false" id="3" x="0" y="0"/>
+<int id="4" val="0"/>
+</moveTo>
+</group>
+</else>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="356">
+<group id="-1">
+<camera-follow comment="false" x="26" y="381">
+<ACTOR eid="var" id="0" vid="1"/>
+</camera-follow>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="13" y="516">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="436">
+<group id="-1"/>
+</draw>
+</group>
+<group id="-1"/>
+</groups>

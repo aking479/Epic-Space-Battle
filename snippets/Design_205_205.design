@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<set-val-205-15 comment="false" x="26" y="40">
+<minus comment="false" id="0" x="0" y="0">
+<get-val-205-6 comment="false" id="0" x="0" y="0"/>
+<times comment="false" id="1" x="0" y="0">
+<minus comment="false" id="0" x="0" y="0">
+<get-val-205-4 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</minus>
+<div comment="false" id="1" x="0" y="0">
+<get-val-205-7 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="2"/>
+</div>
+</times>
+</minus>
+</set-val-205-15>
+<periodic comment="false" x="26" y="80">
+<group id="-1">
+<if comment="false" x="37" y="105">
+<group id="-1">
+<if comment="false" x="48" y="143">
+<group id="-1">
+<say-this comment="false" x="59" y="181">
+<int id="0" val="fireShot"/>
+</say-this>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="1"/>
+</hasvalue>
+<isalive comment="false" id="1" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</isalive>
+</and>
+</if>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="2147483647"/>
+</hasvalue>
+<isalive comment="false" id="1" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</isalive>
+</and>
+</if>
+<else comment="false" x="37" y="225">
+<group id="-1">
+<cancel comment="false" x="48" y="245"/>
+</group>
+</else>
+</group>
+<get-val-205-16 comment="false" id="0" x="0" y="0"/>
+</periodic>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="317">
+<group id="-1">
+<if comment="false" x="26" y="342">
+<group id="-1">
+<scene-disable-snippet comment="false" x="37" y="380">
+<int id="0" val="Bullet Wave"/>
+</scene-disable-snippet>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<isonscreen comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</isonscreen>
+</not>
+</if>
+<else-if comment="false" x="26" y="412">
+<group id="-1">
+<scene-enable-snippet comment="false" x="37" y="445">
+<int id="0" val="Bullet Wave"/>
+</scene-enable-snippet>
+</group>
+<isonscreen comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</isonscreen>
+</else-if>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="505">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="578">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="651">
+<group id="-1">
+<set-val-205-6 comment="false" x="26" y="676">
+<get-val-205-15 comment="false" id="0" x="0" y="0"/>
+</set-val-205-6>
+<repeat comment="false" x="26" y="701">
+<group id="-1">
+<if comment="false" x="37" y="726">
+<group id="-1">
+<if comment="false" x="48" y="764">
+<group id="-1">
+<create-recycled-actor comment="false" x="59" y="802">
+<ACTORTYPE eid="var" id="0" vid="1"/>
+<getxc comment="false" id="1" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getxc>
+<minus comment="false" id="2" x="0" y="0">
+<getyc comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getyc>
+<get-val-205-14 comment="false" id="1" x="0" y="0"/>
+</minus>
+<int id="3" val="0"/>
+</create-recycled-actor>
+<setx comment="false" x="59" y="847">
+<ACTOR eid="lastcreated" id="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</getx>
+<div comment="false" id="1" x="0" y="0">
+<getwidth comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</getwidth>
+<int id="1" val="2"/>
+</div>
+</minus>
+</setx>
+<sety comment="false" x="59" y="897">
+<ACTOR eid="lastcreated" id="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</gety>
+<div comment="false" id="1" x="0" y="0">
+<getheight comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</getheight>
+<int id="1" val="2"/>
+</div>
+</minus>
+</sety>
+<setvel comment="false" x="59" y="947">
+<ACTOR eid="lastcreated" id="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<getdir comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getdir>
+<get-val-205-6 comment="false" id="1" x="0" y="0"/>
+</minus>
+<get-val-205-10 comment="false" id="2" x="0" y="0"/>
+</setvel>
+<setangle comment="false" x="59" y="992">
+<ACTOR eid="lastcreated" id="0"/>
+<plus comment="false" id="1" x="0" y="0">
+<to-degrees comment="false" id="0" x="0" y="0">
+<atan2 comment="false" id="0" x="0" y="0">
+<getdy comment="false" id="0" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</getdy>
+<getdx comment="false" id="1" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</getdx>
+</atan2>
+</to-degrees>
+<get-val-205-9 comment="false" id="1" x="0" y="0"/>
+</plus>
+</setangle>
+<increment comment="false" x="59" y="1047">
+<int id="0" val="6"/>
+<get-val-205-7 comment="false" id="1" x="0" y="0"/>
+</increment>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="1"/>
+</hasvalue>
+<isalive comment="false" id="1" x="0" y="0">
+<ACTOR eid="lastcreated" id="0"/>
+</isalive>
+</and>
+</if>
+</group>
+<and comment="false" id="0" x="0" y="0">
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="2147483647"/>
+</hasvalue>
+<isalive comment="false" id="1" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</isalive>
+</and>
+</if>
+<else comment="false" x="37" y="1103">
+<group id="-1">
+<stop comment="false" x="48" y="1123"/>
+</group>
+</else>
+</group>
+<get-val-205-4 comment="false" id="0" x="0" y="0"/>
+</repeat>
+</group>
+<int id="0" val="fireShot"/>
+</receive-message>
+</group>
+<group id="-1"/>
+</groups>

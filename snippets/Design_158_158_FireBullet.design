@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <create-recycled-actor comment="false" x="26" y="45">
+                    <ACTORTYPE eid="var" id="0" vid="4"/>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="2"/>
+                    </get-xy>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="3"/>
+                        </get-xy>
+                        <get-val-158-8 comment="false" id="1" x="0" y="0"/>
+                    </plus>
+                    <int id="3" val="0"/>
+                </create-recycled-actor>
+                <set-xy comment="false" x="26" y="90">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="0"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-wh comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-wh>
+                            <int id="1" val="2"/>
+                        </div>
+                    </minus>
+                </set-xy>
+                <set-xy comment="false" x="26" y="140">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                        </get-xy>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-wh comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-wh>
+                            <int id="1" val="2"/>
+                        </div>
+                    </minus>
+                </set-xy>
+                <setvel comment="false" x="26" y="190">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <getdir comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </getdir>
+                        <get-val-158-5 comment="false" id="1" x="0" y="0"/>
+                    </minus>
+                    <get-val-158-2 comment="false" id="2" x="0" y="0"/>
+                </setvel>
+                <setangle comment="false" x="26" y="235">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <plus comment="false" id="1" x="0" y="0">
+                        <to-degreesradians comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <atan2 comment="false" id="1" x="0" y="0">
+                                <get-dxy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-dxy>
+                                <get-dxy comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-dxy>
+                            </atan2>
+                        </to-degreesradians>
+                        <get-val-158-6 comment="false" id="1" x="0" y="0"/>
+                    </plus>
+                </setangle>
+                <play-sound4 comment="false" x="26" y="298">
+                    <int id="0" val="0"/>
+                    <SOUND eid="var" id="1" vid="7"/>
+                </play-sound4>
+            </group>
+            <get-val-158-1 comment="false" id="0" x="0" y="0"/>
+        </receive-message>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<receive-message comment="false" x="15" y="1451">
+<group id="-1">
+<set-val-196-16 comment="false" x="26" y="1476">
+<int id="0" val="0"/>
+</set-val-196-16>
+<set-val-196-17 comment="false" x="26" y="1496">
+<true comment="false" id="0" x="0" y="0"/>
+</set-val-196-17>
+</group>
+<int id="0" val="try_change"/>
+</receive-message>
+</group>
+<group id="1">
+<step comment="false" x="15" y="1096">
+<group id="-1">
+<if comment="false" x="26" y="1121">
+<group id="-1">
+<increment comment="false" x="37" y="1146">
+<int id="0" val="16"/>
+<int id="1" val="1"/>
+</increment>
+<if comment="false" x="37" y="1173">
+<group id="-1">
+<set-val-196-16 comment="false" x="48" y="1213">
+<int id="0" val="0"/>
+</set-val-196-16>
+<say-this comment="false" x="48" y="1233">
+<int id="0" val="change"/>
+</say-this>
+</group>
+<moreeq comment="false" id="0" x="0" y="0">
+<get-val-196-16 comment="false" id="0" x="0" y="0"/>
+<div comment="false" id="1" x="0" y="0">
+<times comment="false" id="0" x="0" y="0">
+<get-val-196-15 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1000"/>
+</times>
+<stepsize comment="false" id="1" x="0" y="0"/>
+</div>
+</moreeq>
+</if>
+</group>
+<get-val-196-17 comment="false" id="0" x="0" y="0"/>
+</if>
+</group>
+</step>
+</group>
+<group id="2">
+<draw comment="false" x="15" y="1378">
+<group id="-1"/>
+</draw>
+</group>
+<group id="3">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<if comment="false" x="26" y="40">
+<group id="-1">
+<set-val-196-11 comment="false" x="37" y="65">
+<div comment="false" id="0" x="0" y="0">
+<randint comment="false" id="0" x="0" y="0">
+<int id="0" val="10"/>
+<int id="1" val="90"/>
+</randint>
+<int id="1" val="100"/>
+</div>
+</set-val-196-11>
+</group>
+<get-val-196-12 comment="false" id="0" x="0" y="0"/>
+</if>
+<else comment="false" x="26" y="107">
+<group id="-1">
+<set-val-196-11 comment="false" x="37" y="127">
+<int id="0" val="0"/>
+</set-val-196-11>
+</group>
+</else>
+<dolater comment="false" x="26" y="159">
+<group id="-1">
+<set-val-196-5 comment="false" x="37" y="184">
+<false comment="false" id="0" x="0" y="0"/>
+</set-val-196-5>
+<if comment="false" x="37" y="209">
+<group id="-1">
+<if comment="false" x="48" y="239">
+<group id="-1">
+<set-val-196-6 comment="false" x="59" y="264">
+<plus comment="false" id="0" x="0" y="0">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getx>
+<get-val-196-1 comment="false" id="1" x="0" y="0"/>
+</plus>
+</set-val-196-6>
+<set-val-196-7 comment="false" x="59" y="302">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+</set-val-196-7>
+<set-val-196-8 comment="false" x="59" y="335">
+<minus comment="false" id="0" x="0" y="0">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getx>
+<get-val-196-2 comment="false" id="1" x="0" y="0"/>
+</minus>
+</set-val-196-8>
+<set-val-196-9 comment="false" x="59" y="373">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+</set-val-196-9>
+</group>
+<get-val-196-14 comment="false" id="0" x="0" y="0"/>
+</if>
+<else comment="false" x="48" y="418">
+<group id="-1">
+<set-val-196-6 comment="false" x="59" y="438">
+<minus comment="false" id="0" x="0" y="0">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getx>
+<get-val-196-2 comment="false" id="1" x="0" y="0"/>
+</minus>
+</set-val-196-6>
+<set-val-196-7 comment="false" x="59" y="476">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+</set-val-196-7>
+<set-val-196-8 comment="false" x="59" y="509">
+<plus comment="false" id="0" x="0" y="0">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getx>
+<get-val-196-1 comment="false" id="1" x="0" y="0"/>
+</plus>
+</set-val-196-8>
+<set-val-196-9 comment="false" x="59" y="547">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+</set-val-196-9>
+</group>
+</else>
+</group>
+<str-same comment="false" id="0" x="0" y="0">
+<get-val-196-10 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="h"/>
+</str-same>
+</if>
+<else comment="false" x="37" y="604">
+<group id="-1">
+<if comment="false" x="48" y="624">
+<group id="-1">
+<set-val-196-6 comment="false" x="59" y="649">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getx>
+</set-val-196-6>
+<set-val-196-7 comment="false" x="59" y="682">
+<plus comment="false" id="0" x="0" y="0">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+<get-val-196-1 comment="false" id="1" x="0" y="0"/>
+</plus>
+</set-val-196-7>
+<set-val-196-8 comment="false" x="59" y="720">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getx>
+</set-val-196-8>
+<set-val-196-9 comment="false" x="59" y="753">
+<minus comment="false" id="0" x="0" y="0">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+<get-val-196-2 comment="false" id="1" x="0" y="0"/>
+</minus>
+</set-val-196-9>
+</group>
+<get-val-196-14 comment="false" id="0" x="0" y="0"/>
+</if>
+<else comment="false" x="48" y="803">
+<group id="-1">
+<set-val-196-6 comment="false" x="59" y="823">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getx>
+</set-val-196-6>
+<set-val-196-7 comment="false" x="59" y="856">
+<minus comment="false" id="0" x="0" y="0">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+<get-val-196-2 comment="false" id="1" x="0" y="0"/>
+</minus>
+</set-val-196-7>
+<set-val-196-8 comment="false" x="59" y="894">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getx>
+</set-val-196-8>
+<set-val-196-9 comment="false" x="59" y="927">
+<plus comment="false" id="0" x="0" y="0">
+<gety comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</gety>
+<get-val-196-1 comment="false" id="1" x="0" y="0"/>
+</plus>
+</set-val-196-9>
+</group>
+</else>
+</group>
+</else>
+<moveTo comment="false" x="37" y="989">
+<ACTOR eid="this" id="0"/>
+<get-val-196-8 comment="false" id="1" x="0" y="0"/>
+<get-val-196-9 comment="false" id="2" x="0" y="0"/>
+<times comment="false" id="3" x="0" y="0">
+<get-val-196-4 comment="false" id="0" x="0" y="0"/>
+<div comment="false" id="1" x="0" y="0">
+<get-val-196-1 comment="false" id="0" x="0" y="0"/>
+<plus comment="false" id="1" x="0" y="0">
+<get-val-196-1 comment="false" id="0" x="0" y="0"/>
+<get-val-196-2 comment="false" id="1" x="0" y="0"/>
+</plus>
+</div>
+</times>
+<int id="4" val="0"/>
+</moveTo>
+<say-this comment="false" x="37" y="1036">
+<int id="0" val="try_change"/>
+</say-this>
+</group>
+<get-val-196-11 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+</init>
+</group>
+<group id="4">
+<collide comment="false" x="15" y="1305">
+<group id="-1"/>
+</collide>
+</group>
+<group id="5">
+<receive-message comment="false" x="15" y="1549">
+<group id="-1">
+<set-val-196-17 comment="false" x="26" y="1574">
+<false comment="false" id="0" x="0" y="0"/>
+</set-val-196-17>
+<if comment="false" x="26" y="1599">
+<group id="-1">
+<moveTo comment="false" x="37" y="1624">
+<ACTOR eid="this" id="0"/>
+<get-val-196-6 comment="false" id="1" x="0" y="0"/>
+<get-val-196-7 comment="false" id="2" x="0" y="0"/>
+<get-val-196-4 comment="false" id="3" x="0" y="0"/>
+<int id="4" val="0"/>
+</moveTo>
+<set-val-196-5 comment="false" x="37" y="1656">
+<false comment="false" id="0" x="0" y="0"/>
+</set-val-196-5>
+<dolater comment="false" x="37" y="1681">
+<group id="-1">
+<say-this comment="false" x="48" y="1706">
+<int id="0" val="try_change"/>
+</say-this>
+</group>
+<get-val-196-4 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+<get-val-196-5 comment="false" id="0" x="0" y="0"/>
+</if>
+<else comment="false" x="26" y="1750">
+<group id="-1">
+<moveTo comment="false" x="37" y="1770">
+<ACTOR eid="this" id="0"/>
+<get-val-196-8 comment="false" id="1" x="0" y="0"/>
+<get-val-196-9 comment="false" id="2" x="0" y="0"/>
+<get-val-196-4 comment="false" id="3" x="0" y="0"/>
+<int id="4" val="0"/>
+</moveTo>
+<set-val-196-5 comment="false" x="37" y="1802">
+<true comment="false" id="0" x="0" y="0"/>
+</set-val-196-5>
+<dolater comment="false" x="37" y="1827">
+<group id="-1">
+<say-this comment="false" x="48" y="1852">
+<int id="0" val="try_change"/>
+</say-this>
+</group>
+<get-val-196-4 comment="false" id="0" x="0" y="0"/>
+</dolater>
+</group>
+</else>
+</group>
+<int id="0" val="change"/>
+</receive-message>
+</group>
+<group id="-1"/>
+</groups>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <dolater comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <create-recycled-actor comment="false" x="37" y="72">
+                            <get-val-219-1 comment="false" id="0" x="0" y="0"/>
+                            <randint comment="false" id="1" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <scene-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </scene-wh>
+                                    <get-wh comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="lastcreated" id="0"/>
+                                        <int id="1" val="0"/>
+                                    </get-wh>
+                                </minus>
+                            </randint>
+                            <int id="2" val="-1"/>
+                            <int id="3" val="0"/>
+                        </create-recycled-actor>
+                        <push-shove comment="false" x="37" y="122">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="1"/>
+                            <get-val-219-2 comment="false" id="4" x="0" y="0"/>
+                        </push-shove>
+                        <if comment="false" x="37" y="154">
+                            <group eventID="1" id="-1">
+                                <say-this comment="false" x="48" y="184">
+                                    <int id="0" val="Spawn"/>
+                                </say-this>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <is-paused comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </if>
+                    </group>
+                    <randint comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="1"/>
+                    </randint>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="Spawn"/>
+        </event-custom>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <dolater comment="false" x="26" y="45">
+                    <group eventID="1" id="-1">
+                        <create-recycled-actor comment="false" x="37" y="82">
+                            <get-val-219-1 comment="false" id="0" x="0" y="0"/>
+                            <div comment="false" id="1" x="0" y="0">
+                                <scene-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </scene-wh>
+                                <int id="1" val="2"/>
+                            </div>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-recycled-actor>
+                        <push-shove comment="false" x="37" y="127">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="1"/>
+                            <get-val-219-2 comment="false" id="4" x="0" y="0"/>
+                        </push-shove>
+                        <say-this comment="false" x="37" y="159">
+                            <get-val-219-3 comment="false" id="0" x="0" y="0"/>
+                        </say-this>
+                    </group>
+                    <randint comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-val-219-4 comment="false" id="1" x="0" y="0"/>
+                    </randint>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <get-val-219-3 comment="false" id="0" x="0" y="0"/>
+        </event-custom>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <say-this comment="false" x="26" y="40">
+                    <int id="0" val="Spawn"/>
+                </say-this>
+            </group>
+        </init>
+    </group>
+    <group eventID="4" id="-1"/>
+</groups>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<if comment="false" x="26" y="113">
+<group id="-1">
+<if comment="false" x="37" y="146">
+<group id="-1">
+<if comment="false" x="48" y="179">
+<group id="-1">
+<shout comment="false" x="59" y="212">
+<ACTOR eid="this" id="0"/>
+<get-val-156-1 comment="false" id="1" x="0" y="0"/>
+</shout>
+</group>
+<isalive comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</isalive>
+</if>
+</group>
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="2147483647"/>
+</hasvalue>
+</if>
+<else comment="false" x="37" y="268">
+<group id="-1">
+<stop comment="false" x="48" y="288"/>
+</group>
+</else>
+</group>
+<keypress2 comment="false" id="0" x="0" y="0">
+<int id="0" val="0"/>
+<CONTROL eid="var" id="1" vid="2"/>
+</keypress2>
+</if>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="360">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="433">
+<group id="-1"/>
+</draw>
+</group>
+<group id="-1"/>
+</groups>

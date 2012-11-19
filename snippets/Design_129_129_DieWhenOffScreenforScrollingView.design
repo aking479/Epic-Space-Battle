@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<if comment="false" x="26" y="113">
+<group id="-1">
+<if comment="false" x="37" y="138">
+<group id="-1">
+<die comment="false" x="48" y="176">
+<ACTOR eid="this" id="0"/>
+</die>
+</group>
+<moreeq comment="false" id="0" x="0" y="0">
+<getsy comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getsy>
+<screenh comment="false" id="1" x="0" y="0"/>
+</moreeq>
+</if>
+</group>
+<get-val-129-1 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="26" y="227">
+<group id="-1">
+<if comment="false" x="37" y="252">
+<group id="-1">
+<die comment="false" x="48" y="290">
+<ACTOR eid="this" id="0"/>
+</die>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<getsy comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getsy>
+<int id="1" val="0"/>
+</less>
+</if>
+</group>
+<get-val-129-2 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="26" y="341">
+<group id="-1">
+<if comment="false" x="37" y="366">
+<group id="-1">
+<die comment="false" x="48" y="404">
+<ACTOR eid="this" id="0"/>
+</die>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<getsx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getsx>
+<screenw comment="false" id="1" x="0" y="0"/>
+</more>
+</if>
+</group>
+<get-val-129-3 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="26" y="455">
+<group id="-1">
+<if comment="false" x="37" y="480">
+<group id="-1">
+<die comment="false" x="48" y="518">
+<ACTOR eid="this" id="0"/>
+</die>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<getsx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getsx>
+<int id="1" val="0"/>
+</less>
+</if>
+</group>
+<get-val-129-4 comment="false" id="0" x="0" y="0"/>
+</if>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="597">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="670">
+<group id="-1"/>
+</draw>
+</group>
+<group id="-1"/>
+</groups>

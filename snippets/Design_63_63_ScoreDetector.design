@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<if comment="false" x="26" y="113">
+<group id="-1">
+<if comment="false" x="37" y="151">
+<group id="-1">
+<scene-say comment="false" x="48" y="176">
+<int id="0" val="Space Shooter Score Calculator"/>
+<int id="1" val="addPointsToScoreA"/>
+</scene-say>
+</group>
+<get-val-63-2 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="37" y="208">
+<group id="-1">
+<scene-say comment="false" x="48" y="233">
+<int id="0" val="Space Shooter Score Calculator"/>
+<int id="1" val="addPointsToScoreB"/>
+</scene-say>
+</group>
+<get-val-63-3 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="37" y="265">
+<group id="-1">
+<scene-say comment="false" x="48" y="290">
+<int id="0" val="Space Shooter Score Calculator"/>
+<int id="1" val="addPointsToScoreC"/>
+</scene-say>
+</group>
+<get-val-63-4 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="37" y="322">
+<group id="-1">
+<scene-say comment="false" x="48" y="347">
+<int id="0" val="Space Shooter Score Calculator"/>
+<int id="1" val="addPointsToScoreD"/>
+</scene-say>
+</group>
+<get-val-63-5 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="37" y="379">
+<group id="-1">
+<scene-say comment="false" x="48" y="404">
+<int id="0" val="Space Shooter Score Calculator"/>
+<int id="1" val="addPointsToScoreE"/>
+</scene-say>
+</group>
+<get-val-63-6 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="37" y="436">
+<group id="-1">
+<scene-say comment="false" x="48" y="461">
+<int id="0" val="Space Shooter Score Calculator"/>
+<int id="1" val="addPointsToScoreF"/>
+</scene-say>
+</group>
+<get-val-63-7 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="37" y="493">
+<group id="-1">
+<scene-say comment="false" x="48" y="518">
+<int id="0" val="Space Shooter Score Calculator"/>
+<int id="1" val="addPointsToScoreG"/>
+</scene-say>
+</group>
+<get-val-63-8 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="37" y="550">
+<group id="-1">
+<scene-say comment="false" x="48" y="575">
+<int id="0" val="Space Shooter Score Calculator"/>
+<int id="1" val="addPointsToScoreH"/>
+</scene-say>
+</group>
+<get-val-63-9 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="37" y="607">
+<group id="-1">
+<scene-say comment="false" x="48" y="632">
+<int id="0" val="Space Shooter Score Calculator"/>
+<int id="1" val="addPointsToScoreI"/>
+</scene-say>
+</group>
+<get-val-63-10 comment="false" id="0" x="0" y="0"/>
+</if>
+<if comment="false" x="37" y="664">
+<group id="-1">
+<scene-say comment="false" x="48" y="689">
+<int id="0" val="Space Shooter Score Calculator"/>
+<int id="1" val="addPointsToScoreJ"/>
+</scene-say>
+</group>
+<get-val-63-11 comment="false" id="0" x="0" y="0"/>
+</if>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<isalive comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</isalive>
+</not>
+</if>
+</group>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="761">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="834">
+<group id="-1"/>
+</draw>
+</group>
+<group id="-1"/>
+</groups>

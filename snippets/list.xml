@@ -209,6 +209,8 @@
         <blocks/>
         <events>
             <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+            <event displayName="Click" enabled="true" id="2" name="event-mouse-press-release" order="2" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="3" name="event-mouse-enter-exit-actor" order="3" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_198" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="213" language="" name="ActorEvents_198" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">

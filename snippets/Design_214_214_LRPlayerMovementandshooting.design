@@ -105,16 +105,16 @@
                         <set-xy comment="false" x="37" y="509">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
-                            <int id="2" val="1"/>
+                            <int id="2" val="2"/>
                         </set-xy>
                     </group>
-                    <less comment="false" id="0" x="0" y="0">
+                    <lesseq comment="false" id="0" x="0" y="0">
                         <get-xy comment="false" id="0" x="0" y="0">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
                         </get-xy>
-                        <int id="1" val="0"/>
-                    </less>
+                        <int id="1" val="1"/>
+                    </lesseq>
                 </if>
                 <else-if comment="false" x="26" y="548">
                     <group eventID="7" id="-1">

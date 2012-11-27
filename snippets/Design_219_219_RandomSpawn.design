@@ -5,7 +5,7 @@
             <group eventID="1" id="-1">
                 <dolater comment="false" x="26" y="40">
                     <group eventID="1" id="-1">
-                        <create-recycled-actor comment="false" x="37" y="72">
+                        <create-actor3 comment="false" x="37" y="77">
                             <get-val-219-1 comment="false" id="0" x="0" y="0"/>
                             <randint comment="false" id="1" x="0" y="0">
                                 <int id="0" val="0"/>
@@ -21,17 +21,17 @@
                             </randint>
                             <int id="2" val="-1"/>
                             <int id="3" val="0"/>
-                        </create-recycled-actor>
-                        <push-shove comment="false" x="37" y="122">
+                        </create-actor3>
+                        <push-shove comment="false" x="37" y="127">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <int id="2" val="0"/>
                             <int id="3" val="1"/>
                             <get-val-219-2 comment="false" id="4" x="0" y="0"/>
                         </push-shove>
-                        <if comment="false" x="37" y="154">
+                        <if comment="false" x="37" y="159">
                             <group eventID="1" id="-1">
-                                <say-this comment="false" x="48" y="184">
+                                <say-this comment="false" x="48" y="189">
                                     <int id="0" val="Spawn"/>
                                 </say-this>
                             </group>
@@ -40,10 +40,10 @@
                             </not>
                         </if>
                     </group>
-                    <randint comment="false" id="0" x="0" y="0">
-                        <int id="0" val="0"/>
-                        <int id="1" val="1"/>
-                    </randint>
+                    <times comment="false" id="0" x="0" y="0">
+                        <random comment="false" id="0" x="0" y="0"/>
+                        <get-val-219-4 comment="false" id="1" x="0" y="0"/>
+                    </times>
                     <ACTOR eid="lastcreated" id="2"/>
                 </dolater>
             </group>
@@ -93,6 +93,9 @@
         <init comment="false" x="15" y="15">
             <group eventID="4" id="-1">
                 <say-this comment="false" x="26" y="40">
+                    <int id="0" val="Spawn"/>
+                </say-this>
+                <say-this comment="false" x="26" y="60">
                     <int id="0" val="Spawn"/>
                 </say-this>
             </group>

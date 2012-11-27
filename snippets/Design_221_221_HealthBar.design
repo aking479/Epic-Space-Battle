@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="168" id="0"/>
+                </set-font-new>
+                <set-color comment="false" x="26" y="67">
+                    <color b="0" g="153" id="0" r="0"/>
+                </set-color>
+                <drawfill-rect comment="false" x="26" y="94">
+                    <int id="0" val="0"/>
+                    <plus comment="false" id="1" x="0" y="0">
+                        <times comment="false" id="0" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </scene-wh>
+                            <int id="1" val="0.05"/>
+                        </times>
+                        <int id="1" val="2"/>
+                    </plus>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </scene-wh>
+                            <times comment="false" id="1" x="0" y="0">
+                                <scene-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </scene-wh>
+                                <int id="1" val="0.1"/>
+                            </times>
+                        </minus>
+                        <int id="1" val="2"/>
+                    </plus>
+                    <int id="3" val="150"/>
+                    <int id="4" val="20"/>
+                </drawfill-rect>
+                <set-color comment="false" x="26" y="149">
+                    <color b="0" g="0" id="0" r="0"/>
+                </set-color>
+                <drawfill-rect comment="false" x="26" y="176">
+                    <int id="0" val="0"/>
+                    <times comment="false" id="1" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </scene-wh>
+                        <int id="1" val="0.05"/>
+                    </times>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </scene-wh>
+                        <times comment="false" id="1" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </scene-wh>
+                            <int id="1" val="0.1"/>
+                        </times>
+                    </minus>
+                    <int id="3" val="146"/>
+                    <int id="4" val="16"/>
+                </drawfill-rect>
+                <set-color comment="false" x="26" y="226">
+                    <color b="0" g="204" id="0" r="0"/>
+                </set-color>
+                <drawfill-rect comment="false" x="26" y="253">
+                    <int id="0" val="0"/>
+                    <times comment="false" id="1" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </scene-wh>
+                        <int id="1" val="0.05"/>
+                    </times>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </scene-wh>
+                        <times comment="false" id="1" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </scene-wh>
+                            <int id="1" val="0.1"/>
+                        </times>
+                    </minus>
+                    <times comment="false" id="3" x="0" y="0">
+                        <div comment="false" id="0" x="0" y="0">
+                            <get-game-val-8 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-11 comment="false" id="1" x="0" y="0"/>
+                        </div>
+                        <int id="1" val="146"/>
+                    </times>
+                    <int id="4" val="16"/>
+                </drawfill-rect>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

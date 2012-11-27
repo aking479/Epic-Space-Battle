@@ -13,11 +13,12 @@
     <terrainRegions/>
     <actors/>
     <snippets>
+        <s enabled="false" id="221"/>
         <s enabled="true" id="219">
             <prop id="1" list="0" val="14"/>
             <prop id="2" list="0" val="1"/>
             <prop id="3" list="0" val="spawn"/>
-            <prop id="4" list="0" val="2"/>
+            <prop id="4" list="0" val="3"/>
         </s>
     </snippets>
     <terrain/>

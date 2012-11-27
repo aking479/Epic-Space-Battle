@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <sprite atlasID="0" default="0" desc="" height="48" id="209" name="BackButton" shared="false" width="96">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="48" originy="24" width="96">
+            <poly data="4,0,0,96,0,96,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="227" fixedrot="false" fric="0.2" gid="3" id="208" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="BackButton" oid="-1" pausable="true" rest="0.0" shared="false" sprite="209" static="false" touchable="true">
+        <snippets/>
+    </actor>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="720" id="192" name="Background1" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1080" xpf="1.0" ypf="1.0"/>
     <sprite atlasID="0" default="0" desc="" height="32" id="22" name="Blue Bullet" shared="false" width="32">
         <anim across="3" atlasID="-1" down="1" durations="100,100,100" height="32" id="0" loop="true" name="BulletAnim" numframes="3" originx="16" originy="16" width="96">
@@ -21,6 +29,9 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="230" fixedrot="false" fric="0.2" gid="3" id="214" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Copy of NextButton" oid="-1" pausable="true" rest="0.0" shared="false" sprite="215" static="false" touchable="true">
+        <snippets/>
     </actor>
     <custom-block blocktag="custom-177" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;damage&quot;, ~);" desc="Inflicts the given amount of damage." global="false" gui="inflict %1 damage on %0" id="177" message="damage" name="damage" oid="-1" return="VOID" shared="false" snippetID="175">
         <blank name="Self" order="0" type="ACTOR"/>
@@ -274,6 +285,30 @@
             <poly data="4,0,0,96,0,96,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="225" fixedrot="false" fric="0.2" gid="3" id="204" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="HelpMenu1" oid="-1" pausable="true" rest="0.0" shared="false" sprite="205" static="false" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="360" id="205" name="HelpMenu1" shared="false" width="240">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="360" id="0" loop="true" name="Animation 0" numframes="1" originx="120" originy="180" width="240">
+            <poly data="4,0,0,240,0,240,360,0,360" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="226" fixedrot="false" fric="0.2" gid="3" id="206" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="HelpMenu2" oid="-1" pausable="true" rest="0.0" shared="false" sprite="207" static="false" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="360" id="207" name="HelpMenu2" shared="false" width="240">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="360" id="0" loop="true" name="Animation 0" numframes="1" originx="120" originy="180" width="240">
+            <poly data="4,0,0,240,0,240,360,0,360" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" desc="" height="48" id="213" name="HomeButton" shared="false" width="96">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="48" originy="24" width="96">
+            <poly data="4,0,0,96,0,96,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="229" fixedrot="false" fric="0.2" gid="3" id="212" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="HomeButton" oid="-1" pausable="true" rest="0.0" shared="false" sprite="213" static="false" touchable="true">
+        <snippets/>
+    </actor>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="209" fixedrot="false" fric="0.2" gid="3" id="189" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Item Drop" oid="-1" pausable="true" rest="0.0" shared="false" sprite="190" static="false" touchable="true">
         <snippets/>
     </actor>
@@ -359,6 +394,27 @@
     <custom-block blocktag="custom-172" blocktype="ACTION" code="~.say(&quot;Health&quot;, &quot;makeVulnerable&quot;);" desc="" global="false" gui="make %0 not invincible" id="172" message="makeVulnerable" name="makeVulnerable" oid="-1" return="VOID" shared="false" snippetID="175">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="224" fixedrot="false" fric="0.2" gid="3" id="202" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Menu" oid="-1" pausable="true" rest="0.0" shared="false" sprite="203" static="false" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="360" id="203" name="Menu" shared="false" width="240">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="360" id="0" loop="true" name="Animation 0" numframes="1" originx="120" originy="180" width="240">
+            <poly data="4,0,0,240,0,240,360,0,360" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" desc="" height="48" id="211" name="NextButton" shared="false" width="96">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="48" originy="24" width="96">
+            <poly data="4,0,0,96,0,96,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="228" fixedrot="false" fric="0.2" gid="3" id="210" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="NextButton" oid="-1" pausable="true" rest="0.0" shared="false" sprite="211" static="false" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="48" id="215" name="NextButton" shared="false" width="96">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="48" originy="24" width="96">
+            <poly data="4,0,0,96,0,96,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="215" fixedrot="true" fric="0.2" gid="5" id="21" ignoreg="true" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Player Bullet" oid="-1" pausable="true" rest="0.0" shared="false" sprite="22" static="false" touchable="true">
         <snippets>
             <s enabled="false" id="193">
@@ -401,6 +457,9 @@
                 <prop id="1" list="0" val="25.0"/>
                 <prop id="2" list="0" val="5"/>
                 <prop id="3" list="0" val="21"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="192">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -618,6 +677,14 @@
     <sprite atlasID="0" default="0" desc="" height="32" id="103" name="Red Ball" shared="false" width="32">
         <anim across="2" atlasID="-1" down="1" durations="100,100" height="32" id="0" loop="true" name="Animation 0" numframes="2" originx="16" originy="16" width="64">
             <circle data="9,8,7" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="222" fixedrot="false" fric="0.2" gid="3" id="200" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Restart Button" oid="-1" pausable="true" rest="0.0" shared="false" sprite="201" static="false" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="48" id="201" name="Restart Button" shared="false" width="96">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="48" originy="24" width="96">
+            <poly data="4,0,0,96,0,96,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <custom-block blocktag="custom-179" blocktype="ACTION" code="~.say(&quot;Asteroids Movement&quot;, &quot;restore&quot;);" desc="Restores to maximum health." global="false" gui="restore %0 to max health" id="179" message="restore" name="restore" oid="-1" return="VOID" shared="false" snippetID="-1">

@@ -32,9 +32,9 @@
             <group eventID="2" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="2" id="-1">
-                        <recycle comment="false" x="37" y="70">
+                        <die comment="false" x="37" y="70">
                             <ACTOR eid="this" id="0"/>
-                        </recycle>
+                        </die>
                     </group>
                     <lesseq comment="false" id="0" x="0" y="0">
                         <get-val-220-1 comment="false" id="0" x="0" y="0"/>

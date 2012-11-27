@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-delay comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <pause-unpause comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                </pause-unpause>
+            </group>
+            <int id="0" val="10"/>
+        </event-delay>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="168" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <get-val-223-4 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-0 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <div comment="false" id="0" x="0" y="0">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </screen-wh>
+                            <int id="1" val="2"/>
+                        </div>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-font-width comment="false" id="0" x="0" y="0">
+                                <str-combine comment="false" id="0" x="0" y="0">
+                                    <get-val-223-4 comment="false" id="0" x="0" y="0"/>
+                                    <get-game-val-0 comment="false" id="1" x="0" y="0"/>
+                                </str-combine>
+                            </get-font-width>
+                            <int id="1" val="2"/>
+                        </div>
+                    </minus>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <div comment="false" id="0" x="0" y="0">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </screen-wh>
+                            <int id="1" val="2"/>
+                        </div>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-font-height comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                        </div>
+                    </minus>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

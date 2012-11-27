@@ -41,7 +41,7 @@
             <ACTOR eid="lastcreated" id="2"/>
         </dolater>
     </group>
-    <group eventID="3" id="3">
+    <group eventID="3" id="2">
         <create-actor3 comment="false" x="351" y="146">
             <ACTORTYPE eid="14" id="0"/>
             <int id="1" val="1"/>

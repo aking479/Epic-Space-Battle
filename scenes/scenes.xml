@@ -2,4 +2,6 @@
 <scenes>
     <scene desc="" format="1.0" id="1" name="Starting Menu"/>
     <scene desc="" format="1.0" id="2" name="Level 1"/>
+    <scene desc="" format="1.0" id="3" name="Help 1"/>
+    <scene desc="" format="1.0" id="4" name="Help2"/>
 </scenes>

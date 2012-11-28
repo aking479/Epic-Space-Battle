@@ -473,12 +473,28 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_214" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="230" language="" name="ActorEvents_214" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+    <snippet attachedevent="true" class="scripts.SceneEvents_4" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="231" language="" name="SceneEvents_4" oid="-1" package="scripts." sceneid="4" scenespecific="true" shared="false" type="scene">
+        <text default="" desc="" dropdown="" fullname="Spawn" hidden="false" id="1" name="_Spawn" order="0"/>
+        <boolean default="false" desc="" dropdown="" fullname="Win" hidden="false" id="2" name="_Win" order="1"/>
+        <boolean default="false" desc="" dropdown="" fullname="Lose" hidden="false" id="3" name="_Lose" order="2"/>
+        <text default="" desc="" dropdown="" fullname="WinTxt" hidden="false" id="4" name="_WinTxt" order="3"/>
         <blocks/>
         <events>
-            <event displayName="Click" enabled="true" id="2" name="event-mouse-press-release" order="2" repeats="true"/>
-            <event displayName="On Actor" enabled="true" id="3" name="event-mouse-enter-exit-actor" order="3" repeats="true"/>
-            <event displayName="On Actor" enabled="true" id="4" name="event-mouse-enter-exit-actor" order="4" repeats="true"/>
+            <event displayName="Spawn" enabled="false" id="2" name="event-custom" order="2" repeats="true"/>
+            <event displayName="Win Text" enabled="false" id="3" name="draw" order="3" repeats="true"/>
+            <event displayName="Created" enabled="true" id="4" name="init" order="4" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_3" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="230" language="" name="SceneEvents_3" oid="-1" package="scripts." sceneid="3" scenespecific="true" shared="false" type="scene">
+        <text default="" desc="" dropdown="" fullname="Spawn" hidden="false" id="1" name="_Spawn" order="0"/>
+        <boolean default="false" desc="" dropdown="" fullname="Win" hidden="false" id="2" name="_Win" order="1"/>
+        <boolean default="false" desc="" dropdown="" fullname="Lose" hidden="false" id="3" name="_Lose" order="2"/>
+        <text default="" desc="" dropdown="" fullname="WinTxt" hidden="false" id="4" name="_WinTxt" order="3"/>
+        <blocks/>
+        <events>
+            <event displayName="Spawn" enabled="false" id="2" name="event-custom" order="2" repeats="true"/>
+            <event displayName="Win Text" enabled="false" id="3" name="draw" order="3" repeats="true"/>
+            <event displayName="Created" enabled="true" id="4" name="init" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_212" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="229" language="" name="ActorEvents_212" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">

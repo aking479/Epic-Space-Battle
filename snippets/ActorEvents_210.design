@@ -11,36 +11,11 @@
                                 <int id="0" val="50"/>
                             </filter-bright>
                         </apply-filter>
-                        <dolater comment="false" x="37" y="107">
-                            <group eventID="2" id="-1">
-                                <showhide-layer comment="false" x="48" y="134">
-                                    <int id="0" val="0"/>
-                                    <int id="1" val="5"/>
-                                </showhide-layer>
-                                <showhide-layer comment="false" x="48" y="161">
-                                    <int id="0" val="0"/>
-                                    <int id="1" val="4"/>
-                                </showhide-layer>
-                                <showhide-layer comment="false" x="48" y="188">
-                                    <int id="0" val="0"/>
-                                    <int id="1" val="3"/>
-                                </showhide-layer>
-                                <showhide-layer comment="false" x="48" y="215">
-                                    <int id="0" val="0"/>
-                                    <int id="1" val="2"/>
-                                </showhide-layer>
-                                <showhide-layer comment="false" x="48" y="242">
-                                    <int id="0" val="1"/>
-                                    <int id="1" val="1"/>
-                                </showhide-layer>
-                                <showhide-layer comment="false" x="48" y="269">
-                                    <int id="0" val="1"/>
-                                    <int id="1" val="0"/>
-                                </showhide-layer>
-                            </group>
-                            <int id="0" val="0.1"/>
-                            <ACTOR eid="this" id="2"/>
-                        </dolater>
+                        <scene-change-through comment="false" x="37" y="107">
+                            <SCENE eid="4" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </scene-change-through>
                     </group>
                     <amousestate comment="false" id="0" x="0" y="0">
                         <ACTOR eid="this" id="0"/>

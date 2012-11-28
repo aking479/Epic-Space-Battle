@@ -17,6 +17,22 @@
                         <clear-filter comment="false" x="37" y="133">
                             <ACTOR eid="this" id="0"/>
                         </clear-filter>
+                        <if comment="false" x="37" y="160">
+                            <group eventID="2" id="-1">
+                                <set-dxy comment="false" x="48" y="190">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="0"/>
+                                </set-dxy>
+                                <die comment="false" x="48" y="217">
+                                    <ACTOR eid="this" id="0"/>
+                                </die>
+                            </group>
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-val-220-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </lesseq>
+                        </if>
                     </group>
                     <int id="0" val="0.1"/>
                     <ACTOR eid="this" id="2"/>
@@ -25,6 +41,26 @@
             <ACTOR eid="this" id="0"/>
             <GROUP eid="5" id="1"/>
         </event-collide-actortogroup>
+    </group>
+    <group eventID="1" id="1">
+        <create-recycled-actor comment="false" x="78" y="411">
+            <ACTORTYPE eid="214" id="0"/>
+            <minus comment="false" id="1" x="0" y="0">
+                <get-xy comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                </get-xy>
+                <int id="1" val="8"/>
+            </minus>
+            <minus comment="false" id="2" x="0" y="0">
+                <get-xy comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                </get-xy>
+                <int id="1" val="0"/>
+            </minus>
+            <int id="3" val="0"/>
+        </create-recycled-actor>
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
@@ -45,4 +81,32 @@
         </step>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-dxy comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <randint comment="false" id="2" x="0" y="0">
+                        <int id="0" val="10"/>
+                        <int id="1" val="25"/>
+                    </randint>
+                </set-dxy>
+            </group>
+        </init>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="5" id="0">
+        <event-actor-screen comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <die comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+            <int id="2" val="0"/>
+        </event-actor-screen>
+    </group>
+    <group eventID="5" id="-1"/>
 </groups>

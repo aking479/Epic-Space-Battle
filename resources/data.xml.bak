@@ -9,6 +9,14 @@
         <snippets/>
     </actor>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="720" id="192" name="Background1" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1080" xpf="1.0" ypf="1.0"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="242" fixedrot="true" fric="0.2" gid="3" id="224" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="BlankMenu" oid="-1" pausable="true" rest="0.0" shared="false" sprite="225" static="true" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="360" id="225" name="BlankMenu" shared="false" width="240">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="360" id="0" loop="true" name="Animation 0" numframes="1" originx="120" originy="180" width="240">
+            <poly data="4,0,0,240,0,240,360,0,360" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <sprite atlasID="0" default="0" desc="" height="32" id="22" name="Blue Bullet" shared="false" width="32">
         <anim across="3" atlasID="-1" down="1" durations="100,100,100" height="32" id="0" loop="true" name="BulletAnim" numframes="3" originx="16" originy="16" width="96">
             <circle data="9,7,7" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="true"/>
@@ -113,8 +121,8 @@
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="true" fric="0.2" gid="4" id="58" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Enemy Ship 2" oid="-1" pausable="true" rest="0.0" shared="false" sprite="59" static="false" touchable="true">
         <snippets>
             <s enabled="true" id="205">
-                <prop id="16" list="0" val="1.5"/>
                 <prop id="1" list="0" val="102"/>
+                <prop id="16" list="0" val="1.5"/>
                 <prop id="4" list="0" val="3"/>
                 <prop id="6" list="0" val="270"/>
                 <prop id="7" list="0" val="20"/>
@@ -122,8 +130,8 @@
                 <prop id="10" list="0" val="50"/>
                 <prop id="12" list="0" val="270"/>
                 <prop id="14" list="0" val="4"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="0.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="175">
                 <prop id="1" list="0" val="1"/>
@@ -166,8 +174,8 @@
                 <prop id="11" list="0" val="0"/>
                 <prop id="12" list="0" val="false"/>
                 <prop id="14" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="0.5"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="false"/>
                 <prop id="16" list="0" val="0.0"/>
             </s>
@@ -199,8 +207,8 @@
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="A boss-type enemy ship. Has lots of health." eventsnippetid="-1" fixedrot="true" fric="0.2" gid="4" id="50" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Enemy Ship 3" oid="-1" pausable="true" rest="0.0" shared="false" sprite="51" static="false" touchable="true">
         <snippets>
             <s enabled="true" id="205">
-                <prop id="16" list="0" val="2"/>
                 <prop id="1" list="0" val="102"/>
+                <prop id="16" list="0" val="2"/>
                 <prop id="4" list="0" val="4"/>
                 <prop id="6" list="0" val="270"/>
                 <prop id="7" list="0" val="20"/>
@@ -208,8 +216,8 @@
                 <prop id="10" list="0" val="40"/>
                 <prop id="12" list="0" val="270"/>
                 <prop id="14" list="0" val="4"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="0.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="49">
                 <prop id="2" list="0" val="3"/>
@@ -339,7 +347,7 @@
     </actor>
     <sprite atlasID="0" default="0" desc="" height="32" id="190" name="Item Drop" shared="false" width="34">
         <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="32" id="0" loop="true" name="Animation 0" numframes="6" originx="17" originy="16" width="204">
-            <poly data="4,0,0,34,0,34,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,34,0,34,32,0,32" density="0.1" fric="0.2" gid="8" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
     <tileset across="10" atlasID="0" desc="" down="6" id="6" name="JunkTiles1" oid="-1" shared="false" th="32" tw="32">
@@ -455,14 +463,11 @@
     </actor>
     <sprite atlasID="0" default="0" desc="" height="32" id="188" name="Player Dual Shot" shared="false" width="32">
         <anim across="3" atlasID="-1" down="1" durations="100,100,100" height="32" id="0" loop="true" name="Animation 0" numframes="3" originx="16" originy="16" width="96">
-            <circle data="16,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="true"/>
+            <circle data="16,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="217" fixedrot="true" fric="0.2" gid="5" id="187" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="0.1" name="Player Dual Shot" oid="-1" pausable="true" rest="0.0" shared="false" sprite="188" static="false" touchable="true">
         <snippets>
-            <s enabled="true" id="193">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="195">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
@@ -485,9 +490,7 @@
                 <prop id="1" list="0" val="25.0"/>
                 <prop id="2" list="0" val="5"/>
                 <prop id="3" list="0" val="21"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="192">
+                <prop id="4" list="0" val="0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>

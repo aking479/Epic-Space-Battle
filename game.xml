@@ -25,6 +25,7 @@
             <r id="198"/>
             <r id="208"/>
             <r id="210"/>
+            <r id="224"/>
         </group>
         <group desc="" id="3" name="Actions" type="snippet">
             <r id="235"/>
@@ -35,12 +36,12 @@
         </group>
     </folders>
     <packs>
-        <pack desc="Provides simple health functionality for action games.&#10;&lt;br&gt;&lt;br&gt;&#10;Attach Health t to any actor that wishes to take part in the health system. Inflicts Damage adds the ability for one actor to harm another." id="17" name="Space Shooter Health Pack" oid="-1" resources="" snippets="85,117,86,175,174,191,82,172,176,193,195"/>
+        <pack desc="Provides simple health functionality for action games.&#10;&lt;br&gt;&lt;br&gt;&#10;Attach Health t to any actor that wishes to take part in the health system. Inflicts Damage adds the ability for one actor to harm another." id="17" name="Space Shooter Health Pack" oid="-1" resources="" snippets="85,117,86,175,191,174,172,82,176,193,195"/>
         <pack desc="Helps you drawing a score inside a HUD. Create a scoring game attribute before using." id="16" name="Space Shooter Scoring Pack" oid="-1" resources="" snippets="171,63,62"/>
         <pack desc="" id="19" name="Space Shooter Game Start Pack" oid="-1" resources="" snippets="187,141"/>
-        <pack desc="Contains various types of motion. Primarily meant for overhead games or for enemies in side-scrolling games." id="18" name="Space Shooter Motion Pack" oid="-1" resources="" snippets="129,177,183,192,180"/>
+        <pack desc="Contains various types of motion. Primarily meant for overhead games or for enemies in side-scrolling games." id="18" name="Space Shooter Motion Pack" oid="-1" resources="" snippets="129,177,192,183,180"/>
         <pack desc="" id="20" name="Exploding Actor" oid="34584" resources="" snippets="235,233"/>
-        <pack desc="A collection of action-related Behaviors used in the Space Shooter kit.&#10;&lt;br&gt;&#10;Behaviors include Fire Bullet, Do on Key Press, Die After Time, and Switch Animation." id="12" name="Space Shooter Action Pack" oid="-1" resources="" snippets="205,154,64,156,157,158,162"/>
+        <pack desc="A collection of action-related Behaviors used in the Space Shooter kit.&#10;&lt;br&gt;&#10;Behaviors include Fire Bullet, Do on Key Press, Die After Time, and Switch Animation." id="12" name="Space Shooter Action Pack" oid="-1" resources="" snippets="205,154,156,64,157,158,162"/>
         <pack desc="Make the camera follow an actor. Enables what we call scrolling. &lt;br&gt;&lt;br&gt;&#10;The only resource in the pack is the Camera Follower, which is used for the Auto Scrolling Behavior." id="14" name="Space Shooter Camera Pack" oid="-1" resources="" snippets="116"/>
     </packs>
     <groups>
@@ -52,10 +53,12 @@
         <group desc="Screen icons that are designed to NOT interact with anything else on screen." id="9" name="Icons"/>
     </groups>
     <cgroups>
-        <cgroup g1="5" g2="4"/>
-        <cgroup g1="6" g2="0"/>
+        <cgroup g1="1" g2="3"/>
+        <cgroup g1="1" g2="0"/>
         <cgroup g1="0" g2="8"/>
         <cgroup g1="0" g2="4"/>
+        <cgroup g1="0" g2="6"/>
+        <cgroup g1="4" g2="5"/>
     </cgroups>
     <input>
         <key id="0" keyname="RIGHT" name="Right" vk="39" vks="39"/>
@@ -73,6 +76,8 @@
         <key id="12" keyname="SPACE" name="Space" vk="32" vks="32"/>
         <key id="13" keyname="D" name="D" vk="68" vks="68"/>
         <key id="14" keyname="A" name="A" vk="65" vks="65"/>
+        <key id="15" keyname="P" name="P" vk="80" vks="80"/>
+        <key id="16" keyname="SHIFT" name="Shift" vk="16" vks="16"/>
     </input>
     <attcats>
         <cat id="0" name="Health"/>
@@ -88,13 +93,14 @@
         <number cid="-1" id="11" name="MaxHealth" save="true" value="100.0"/>
         <bool cid="-1" id="3" name="GameStart" save="true" value="true"/>
         <number cid="0" id="2" name="Energy" save="true" value="1.0"/>
+        <bool cid="1" id="10" name="Sound?" save="true" value="true"/>
         <list cid="-1" id="4" name="ArsenalList" save="true" val="list">
             <text order="0" value="Tripleshot"/>
             <text order="1" value="Laser"/>
         </list>
-        <bool cid="1" id="10" name="Sound?" save="true" value="true"/>
-        <number cid="0" id="1" name="Lives" save="true" value="0.0"/>
+        <bool cid="-1" id="12" name="WinLose" save="true" value="true"/>
         <bool cid="1" id="9" name="Pause" save="true" value="false"/>
+        <number cid="0" id="1" name="Lives" save="true" value="0.0"/>
         <number cid="0" id="8" name="Health" save="true" value="0.0"/>
         <number cid="-1" id="0" name="Score" save="true" value="0.0"/>
         <bool cid="0" id="7" name="First Level" save="true" value="false"/>
@@ -123,7 +129,7 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="1,14,21,50,58,102,187,189,196,198,200,202,204,206,208,210,212,214,218,220,222,6,7,193,18,192,168" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="1,14,21,50,58,102,187,189,196,198,200,202,204,206,208,210,212,214,218,220,222,224,6,7,193,18,192,168" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>

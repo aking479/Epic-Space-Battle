@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="21" y="18">
+            <group eventID="1" id="-1">
+                <if comment="false" x="32" y="43">
+                    <group eventID="5" id="-1">
+                        <draw-text comment="false" x="43" y="68">
+                            <get-val-242-1 comment="false" id="0" x="0" y="0"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <div comment="false" id="0" x="0" y="0">
+                                    <scene-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </scene-wh>
+                                    <int id="1" val="2"/>
+                                </div>
+                                <div comment="false" id="1" x="0" y="0">
+                                    <get-font-width comment="false" id="0" x="0" y="0">
+                                        <get-val-242-1 comment="false" id="0" x="0" y="0"/>
+                                    </get-font-width>
+                                    <int id="1" val="2"/>
+                                </div>
+                            </minus>
+                            <int id="2" val="4"/>
+                        </draw-text>
+                    </group>
+                    <get-game-val-12 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

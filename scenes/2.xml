@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="216" extheight="544" extwidth="384" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="16.0" height="480" id="2" name="Level 1" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="320">
+<scene depth="3" desc="" eventsnippetid="216" extheight="544" extwidth="384" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="16.0" height="480" id="2" name="Level 1" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="320">
     <layers>
-        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+        <layer color="0,255,0" id="2" name="Layer 2" order="0"/>
+        <layer color="0,0,255" id="1" name="Layer 1" order="1"/>
+        <layer color="100,168,234" id="0" name="Layer 0" order="2"/>
     </layers>
     <color-bg blue="255" green="255" red="255"/>
     <backgrounds>
@@ -11,7 +13,9 @@
     <joints/>
     <regions/>
     <terrainRegions/>
-    <actors/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="224" name="BlankMenu 1" sx="1.0" sy="1.0" x="40" y="60" z="0"/>
+    </actors>
     <snippets>
         <s enabled="false" id="221"/>
         <s enabled="true" id="219">

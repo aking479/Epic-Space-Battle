@@ -5,4 +5,5 @@
     <scene desc="" format="1.0" id="3" name="Help 1"/>
     <scene desc="" format="1.0" id="4" name="Help2"/>
     <scene desc="" format="1.0" id="5" name="WinScene"/>
+    <scene desc="" format="1.0" id="6" name="LoseScene"/>
 </scenes>

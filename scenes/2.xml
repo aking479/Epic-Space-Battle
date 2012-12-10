@@ -11,11 +11,14 @@
     </backgrounds>
     <foregrounds/>
     <joints/>
-    <regions/>
+    <regions>
+        <region b="64" g="64" h="517" id="0" name="Region 0" pts="4,0.0,0.0,0.0,517.0,50.0,517.0,50.0,0.0" r="64" type="box" w="50" x="-75" y="3"/>
+        <region b="64" g="64" h="514" id="1" name="Region 1" pts="4,0.0,0.0,0.0,514.0,52.0,514.0,52.0,0.0" r="64" type="box" w="52" x="356" y="5"/>
+        <region b="64" g="64" h="24" id="2" name="Region 2" pts="4,0.0,0.0,0.0,24.0,380.0,24.0,380.0,0.0" r="64" type="box" w="380" x="-25" y="497"/>
+        <region b="64" g="64" h="7" id="3" name="Region 3" pts="4,0.0,0.0,0.0,7.0,489.0,7.0,489.0,0.0" r="64" type="box" w="489" x="-78" y="-38"/>
+    </regions>
     <terrainRegions/>
-    <actors>
-        <actor a="0.0" aid="1" c="false" group="3" id="224" name="BlankMenu 1" sx="1.0" sy="1.0" x="40" y="60" z="0"/>
-    </actors>
+    <actors/>
     <snippets>
         <s enabled="false" id="221"/>
         <s enabled="true" id="219">
@@ -23,6 +26,7 @@
             <prop id="2" list="0" val="1"/>
             <prop id="3" list="0" val="spawn"/>
             <prop id="4" list="0" val="3"/>
+            <prop id="5" list="0" val="14"/>
         </s>
     </snippets>
     <terrain/>

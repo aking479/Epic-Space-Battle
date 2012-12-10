@@ -39,4 +39,29 @@
         </event-actor-screen>
     </group>
     <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <setav comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <plus comment="false" id="1" x="0" y="0">
+                        <neg comment="false" id="0" x="0" y="0">
+                            <int id="0" val="360"/>
+                        </neg>
+                        <times comment="false" id="1" x="0" y="0">
+                            <times comment="false" id="0" x="0" y="0">
+                                <random comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="360"/>
+                            </times>
+                            <int id="1" val="2"/>
+                        </times>
+                    </plus>
+                </setav>
+                <ignore-screen-tolerance comment="false" x="26" y="87">
+                    <ACTOR eid="this" id="0"/>
+                </ignore-screen-tolerance>
+            </group>
+        </init>
+    </group>
+    <group eventID="5" id="-1"/>
 </groups>

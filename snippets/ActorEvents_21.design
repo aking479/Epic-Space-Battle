@@ -39,4 +39,14 @@
         </event-collide-actortogroup>
     </group>
     <group eventID="8" id="-1"/>
+    <group eventID="9" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <ignore-screen-tolerance comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                </ignore-screen-tolerance>
+            </group>
+        </init>
+    </group>
+    <group eventID="9" id="-1"/>
 </groups>

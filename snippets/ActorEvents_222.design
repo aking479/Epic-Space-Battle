@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="168" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Score: "/>
+                        <get-game-val-0 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                    <div comment="false" id="1" x="0" y="0">
+                        <get-wh comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-wh>
+                        <int id="1" val="10"/>
+                    </div>
+                    <div comment="false" id="2" x="0" y="0">
+                        <get-wh comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </get-wh>
+                        <int id="1" val="4"/>
+                    </div>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

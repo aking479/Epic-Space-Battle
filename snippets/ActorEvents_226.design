@@ -1,46 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
-    <group eventID="4" id="0">
+    <group eventID="1" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="1" id="-1">
+                        <die comment="false" x="37" y="80">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                    </group>
+                    <isalive comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                    </isalive>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <ACTORTYPE eid="1" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
         <event-actor-screen comment="false" x="15" y="15">
-            <group eventID="4" id="-1">
-                <die comment="false" x="26" y="42">
-                    <ACTOR eid="this" id="0"/>
-                </die>
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="1" id="-1">
+                        <die comment="false" x="37" y="75">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                    </group>
+                    <isalive comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                    </isalive>
+                </if>
             </group>
             <ACTOR eid="this" id="0"/>
             <int id="1" val="1"/>
             <int id="2" val="1"/>
         </event-actor-screen>
     </group>
-    <group eventID="4" id="-1"/>
-    <group eventID="6" id="0">
-        <event-paused comment="false" x="15" y="15">
-            <group eventID="6" id="-1">
-                <set-dxy comment="false" x="26" y="42">
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <setav comment="false" x="26" y="40">
                     <ACTOR eid="this" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="0"/>
-                </set-dxy>
-                <set-dxy comment="false" x="26" y="69">
+                    <plus comment="false" id="1" x="0" y="0">
+                        <neg comment="false" id="0" x="0" y="0">
+                            <int id="0" val="360"/>
+                        </neg>
+                        <times comment="false" id="1" x="0" y="0">
+                            <times comment="false" id="0" x="0" y="0">
+                                <random comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="360"/>
+                            </times>
+                            <int id="1" val="2"/>
+                        </times>
+                    </plus>
+                </setav>
+                <ignore-screen-tolerance comment="false" x="26" y="87">
                     <ACTOR eid="this" id="0"/>
-                    <int id="1" val="1"/>
-                    <int id="2" val="0"/>
-                </set-dxy>
+                </ignore-screen-tolerance>
             </group>
-            <int id="0" val="0"/>
-        </event-paused>
+        </init>
     </group>
-    <group eventID="6" id="-1"/>
-    <group eventID="8" id="0">
-        <event-collide-actortogroup comment="false" x="15" y="15">
-            <group eventID="8" id="-1">
-                <die comment="false" x="26" y="47">
-                    <ACTOR eid="this" id="0"/>
-                </die>
-            </group>
-            <ACTOR eid="this" id="0"/>
-            <GROUP eid="4" id="1"/>
-        </event-collide-actortogroup>
-    </group>
-    <group eventID="8" id="-1"/>
+    <group eventID="3" id="-1"/>
 </groups>

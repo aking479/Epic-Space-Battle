@@ -7,15 +7,15 @@
     </layers>
     <color-bg blue="255" green="255" red="255"/>
     <backgrounds>
-        <ref id="18"/>
+        <ref id="230"/>
     </backgrounds>
     <foregrounds/>
     <joints/>
     <regions>
-        <region b="64" g="64" h="517" id="0" name="Region 0" pts="4,0.0,0.0,0.0,517.0,50.0,517.0,50.0,0.0" r="64" type="box" w="50" x="-75" y="3"/>
-        <region b="64" g="64" h="514" id="1" name="Region 1" pts="4,0.0,0.0,0.0,514.0,52.0,514.0,52.0,0.0" r="64" type="box" w="52" x="356" y="5"/>
-        <region b="64" g="64" h="24" id="2" name="Region 2" pts="4,0.0,0.0,0.0,24.0,380.0,24.0,380.0,0.0" r="64" type="box" w="380" x="-25" y="497"/>
-        <region b="64" g="64" h="7" id="3" name="Region 3" pts="4,0.0,0.0,0.0,7.0,489.0,7.0,489.0,0.0" r="64" type="box" w="489" x="-78" y="-38"/>
+        <region b="64" g="64" h="517" id="0" name="Region 0" pts="4,50.0,0.0,50.0,517.0,0.0,517.0,0.0,0.0" r="64" type="box" w="50" x="-75" y="3"/>
+        <region b="64" g="64" h="514" id="1" name="Region 1" pts="4,52.0,0.0,52.0,514.0,0.0,514.0,0.0,0.0" r="64" type="box" w="52" x="356" y="5"/>
+        <region b="64" g="64" h="24" id="2" name="Region 2" pts="4,380.0,0.0,380.0,24.0,0.0,24.0,0.0,0.0" r="64" type="box" w="380" x="-25" y="497"/>
+        <region b="64" g="64" h="7" id="3" name="Region 3" pts="4,489.0,0.0,489.0,7.0,0.0,7.0,0.0,0.0" r="64" type="box" w="489" x="-78" y="-38"/>
     </regions>
     <terrainRegions/>
     <actors/>
@@ -26,7 +26,8 @@
             <prop id="2" list="0" val="1"/>
             <prop id="3" list="0" val="spawn"/>
             <prop id="4" list="0" val="3"/>
-            <prop id="5" list="0" val="14"/>
+            <prop id="5" list="0" val="228"/>
+            <prop id="6" list="0" val="false"/>
         </s>
     </snippets>
     <terrain/>

@@ -87,14 +87,7 @@
         </blocks>
         <events>
             <event displayName="Actor - Any" enabled="true" id="1" name="collide" order="1" repeats="true"/>
-            <event displayName="damage" enabled="true" id="2" name="event-custom-block" order="2" repeats="true"/>
-            <event displayName="restore" enabled="true" id="3" name="event-custom-block" order="3" repeats="true"/>
-            <event displayName="heal" enabled="true" id="4" name="event-custom-block" order="4" repeats="true"/>
-            <event displayName="makeInvincible" enabled="true" id="5" name="event-custom-block" order="5" repeats="true"/>
-            <event displayName="setHealth" enabled="true" id="6" name="event-custom-block" order="6" repeats="true"/>
-            <event displayName="getHealth" enabled="true" id="7" name="event-custom-block" order="7" repeats="true"/>
             <event displayName="Created" enabled="true" id="8" name="init" order="8" repeats="true"/>
-            <event displayName="makeVulnerable" enabled="true" id="9" name="event-custom-block" order="9" repeats="true"/>
             <event displayName="tookDamage" enabled="true" id="10" name="event-custom" order="10" repeats="true"/>
         </events>
     </snippet>
@@ -281,10 +274,9 @@
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Updated" enabled="true" id="3" name="step" order="3" repeats="true"/>
+            <event displayName="Updated" enabled="false" id="3" name="step" order="3" repeats="true"/>
             <event displayName="Enters Screen" enabled="true" id="4" name="event-actor-screen" order="4" repeats="true"/>
-            <event displayName="Actor - Any" enabled="false" id="5" name="collide" order="5" repeats="true"/>
-            <event displayName="Actor - Type" enabled="true" id="6" name="event-collide-actortotype" order="6" repeats="true"/>
+            <event displayName="Actor - Group" enabled="true" id="7" name="event-collide-actortogroup" order="7" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_206_206_SetOffscreenTolerances" desc="" description="" design="true" drawOrder="0" id="206" language="" name="Set Offscreen Tolerances" oid="-1" package="" scenespecific="false" shared="false" type="scene">
@@ -410,13 +402,15 @@
         <boolean default="false" desc="" dropdown="" fullname="Win" hidden="false" id="6" name="_Win" order="5"/>
         <boolean default="false" desc="" dropdown="" fullname="Lose" hidden="false" id="7" name="_Lose" order="6"/>
         <region default="" desc="Region off the bottom of the screen" dropdown="" fullname="Bottom" hidden="false" id="8" name="_Bottom" order="7"/>
+        <number default="0.0" desc="" dropdown="" fullname="Number of Bombs" hidden="true" id="9" name="_NumberofBombs" order="8"/>
+        <text default="You have no more bombs!" desc="" dropdown="" fullname="WriBomb" hidden="false" id="10" name="_WriBomb" order="9"/>
+        <boolean default="false" desc="" dropdown="" fullname="Count1" hidden="true" id="11" name="_Count1" order="10"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
-            <event displayName="After N secs" enabled="false" id="3" name="event-delay" order="3" repeats="true"/>
             <event displayName="Drawing" enabled="true" id="5" name="draw" order="5" repeats="true"/>
             <event displayName="Updated" enabled="true" id="6" name="step" order="6" repeats="true"/>
-            <event displayName="Custom Event" enabled="true" id="7" name="event-custom" order="7" repeats="true"/>
+            <event displayName="Custom Event" enabled="false" id="7" name="event-custom" order="7" repeats="true"/>
             <event displayName="Every N secs" enabled="true" id="8" name="event-periodic" order="8" repeats="true"/>
             <event displayName="After N secs" enabled="false" id="9" name="event-delay" order="9" repeats="true"/>
         </events>
@@ -460,9 +454,9 @@
         <events>
             <event displayName="Spawn1" enabled="true" id="2" name="event-custom" order="2" repeats="true"/>
             <event displayName="Created" enabled="true" id="4" name="init" order="4" repeats="true"/>
-            <event displayName="Keyboard" enabled="true" id="5" name="event-key-press-release" order="5" repeats="true"/>
+            <event displayName="Keyboard" enabled="false" id="5" name="event-key-press-release" order="5" repeats="true"/>
             <event displayName="After N secs" enabled="true" id="7" name="event-delay" order="7" repeats="true"/>
-            <event displayName="Spawn2" enabled="false" id="8" name="event-custom" order="8" repeats="true"/>
+            <event displayName="Spawn2" enabled="true" id="8" name="event-custom" order="8" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_196" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="212" language="" name="ActorEvents_196" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
@@ -487,6 +481,8 @@
         <actortype default="" desc="" dropdown="" fullname="Ammunition Type" hidden="true" id="3" name="_AmmunitionType" order="3"/>
         <number default="0" desc="Keeps track of which upgrade player is on." dropdown="" fullname="Upgrade" hidden="true" id="4" name="_Upgrade" order="4"/>
         <number default="416" desc="" dropdown="" fullname="StartingPos" hidden="true" id="5" name="_StartingPos" order="5"/>
+        <number default="0" desc="" dropdown="" fullname="Number of Bombs" hidden="true" id="6" name="_NumberofBombs" order="6"/>
+        <text default="You have no more bombs!" desc="" dropdown="" fullname="WriBomb" hidden="false" id="7" name="_WriBomb" order="7"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
@@ -494,6 +490,8 @@
             <event displayName="Actor - Type" enabled="true" id="5" name="event-collide-actortotype" order="5" repeats="true"/>
             <event displayName="Created" enabled="true" id="6" name="init" order="6" repeats="true"/>
             <event displayName="Copy of Actor - Type" enabled="true" id="7" name="event-collide-actortotype" order="7" repeats="true"/>
+            <event displayName="Every N secs" enabled="true" id="8" name="event-periodic" order="8" repeats="true"/>
+            <event displayName="Copy of Copy of Actor - Type" enabled="true" id="9" name="event-collide-actortotype" order="9" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_21" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="215" language="" name="ActorEvents_21" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
@@ -529,10 +527,6 @@
             <event displayName="Enters Screen" enabled="true" id="4" name="event-actor-screen" order="4" repeats="true"/>
             <event displayName="Created" enabled="true" id="5" name="init" order="5" repeats="true"/>
         </events>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_5" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="239" language="" name="SceneEvents_5" oid="-1" package="scripts." sceneid="5" scenespecific="true" shared="false" type="scene">
-        <blocks/>
-        <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_218" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="238" language="" name="ActorEvents_218" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <number default="0" desc="" dropdown="" fullname="Counter" hidden="true" id="1" name="_Counter" order="0"/>
@@ -661,15 +655,48 @@
         <blocks/>
         <events/>
     </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_235" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="248" language="" name="ActorEvents_235" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="After N secs" enabled="true" id="1" name="event-delay" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_231" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="246" language="" name="ActorEvents_231" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="If selected, the fragments will be recycled actors." dropdown="" fullname="Recycled Actors" hidden="false" id="1" name="_RecycledActors" order="0"/>
+        <number default="0.0" desc="" dropdown="" fullname="Direction" hidden="true" id="2" name="_Direction" order="1"/>
+        <number default="0.0" desc="An offset in the direction of movement at which the fragments will be created." dropdown="" fullname="Offset" hidden="false" id="3" name="_Offset" order="2"/>
+        <number default="5.0" desc="The minimum speed at which the fragments fly away." dropdown="" fullname="Minimum Speed" hidden="false" id="4" name="_MinimumSpeed" order="3"/>
+        <number default="10.0" desc="The maximum speed at which the fragments fly away." dropdown="" fullname="Maximum Speed" hidden="false" id="5" name="_MaximumSpeed" order="4"/>
+        <number default="360.0" desc="The maximum turning speed for the fragments." dropdown="" fullname="Maximum Turning Speed" hidden="false" id="6" name="_MaximumTurningSpeed" order="5"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor - Type" enabled="true" id="2" name="event-collide-actortotype" order="2" repeats="true"/>
+            <event displayName="Enters Screen" enabled="true" id="4" name="event-actor-screen" order="4" repeats="true"/>
+            <event displayName="Created" enabled="true" id="5" name="init" order="5" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_233" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="247" language="" name="ActorEvents_233" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Enters Screen" enabled="true" id="4" name="event-actor-screen" order="4" repeats="true"/>
+            <event displayName="Created" enabled="true" id="9" name="init" order="9" repeats="true"/>
+        </events>
+    </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_6" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="244" language="" name="SceneEvents_6" oid="-1" package="scripts." sceneid="6" scenespecific="true" shared="false" type="scene">
         <blocks/>
         <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_228" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="245" language="" name="ActorEvents_228" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="" dropdown="" fullname="DropPerc" hidden="false" id="1" name="_DropPerc" order="0"/>
+        <number default="1.0" desc="" dropdown="" fullname="Health" hidden="false" id="2" name="_Health" order="1"/>
         <blocks/>
         <events>
-            <event displayName="Created" enabled="false" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Actor - Group" enabled="false" id="2" name="event-collide-actortogroup" order="2" repeats="true"/>
+            <event displayName="Created" enabled="true" id="3" name="init" order="3" repeats="true"/>
+            <event displayName="Enters Screen" enabled="true" id="4" name="event-actor-screen" order="4" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="5" name="event-collide-actortotype" order="5" repeats="true"/>
+            <event displayName="Actor Created" enabled="true" id="6" name="event-actor-create-kill" order="6" repeats="true"/>
+            <event displayName="Actor - Any" enabled="true" id="7" name="collide" order="7" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="8" name="event-collide-actortotype" order="8" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_224" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="242" language="" name="ActorEvents_224" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">

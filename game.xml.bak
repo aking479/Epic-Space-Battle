@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<game accelFramerate="0" adsPosition="0" aheight="480" airCert="" airPass="" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="320" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.company.gamename" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="" cws-icon128="" cws-icon16="" cws-name="" cws-version="" default="1" defaultFramerate="30" desc="" deviceOS="6.0" engine="30" format="2.0" gameid="15674" height="480" kit="false" lockURL="" mochi="" multitouch="true" name="Epic Space Battle V0.12" ngID="" ngKey="" onlineID="24297" orientation="0" preloaderstyle="0" products="" projectType="" scale="1.0" showAds="false" simulatorOS="6.0" splashStyle="0" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" thumbstickStyle="0" useGlossyIcon="false" width="320">
+<game accelFramerate="0" adsPosition="0" aheight="480" airCert="" airPass="" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="320" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.company.gamename" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="" cws-icon128="" cws-icon16="" cws-name="" cws-version="" default="1" defaultFramerate="30" desc="" deviceOS="6.0" engine="30" format="2.0" gameid="15674" height="480" kit="false" lockURL="" mochi="" multitouch="true" name="Epic Space Battle V0.1" ngID="" ngKey="" onlineID="24297" orientation="0" preloaderstyle="0" products="" projectType="" scale="1.0" showAds="false" simulatorOS="6.0" splashStyle="0" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" thumbstickStyle="0" useGlossyIcon="false" width="320">
     <folders>
         <group desc="Enemies for the game." id="0" name="Enemies" type="actor">
+            <r id="235"/>
             <r id="218"/>
             <r id="214"/>
             <r id="228"/>
@@ -10,7 +11,9 @@
         <group desc="Bullets, explosions and other effects." id="1" name="Bullets and Effects" type="actor">
             <r id="187"/>
             <r id="21"/>
+            <r id="233"/>
             <r id="189"/>
+            <r id="231"/>
             <r id="226"/>
         </group>
         <group desc="" id="2" name="Buttons and Menus" type="actor">
@@ -87,20 +90,15 @@
         <p name="phys.gravy" value=""/>
     </props>
     <attributes>
-        <list cid="-1" id="6" name="HasWeapon" save="true" val="list"/>
         <bool cid="-1" id="13" name="GameOver?" save="true" value="false"/>
-        <list cid="-1" id="4" name="ArsenalList" save="true" val="list">
-            <text order="0" value="Tripleshot"/>
-            <text order="1" value="Laser"/>
-        </list>
         <bool cid="1" id="10" name="Sound?" save="true" value="true"/>
         <number cid="0" id="8" name="Health" save="true" value="100.0"/>
+        <number cid="-1" id="14" name="Bombs" save="true" value="0"/>
         <bool cid="0" id="7" name="First Level" save="true" value="false"/>
         <number cid="-1" id="11" name="MaxHealth" save="true" value="100.0"/>
         <bool cid="-1" id="3" name="GameStart" save="true" value="true"/>
-        <number cid="0" id="2" name="Energy" save="true" value="1.0"/>
+        <number cid="-1" id="15" name="Wave" save="true" value="0"/>
         <bool cid="-1" id="12" name="WinLose" save="true" value="false"/>
-        <number cid="0" id="1" name="Lives" save="true" value="0.0"/>
         <bool cid="1" id="9" name="Pause" save="true" value="false"/>
         <number cid="-1" id="0" name="Score" save="true" value="0.0"/>
     </attributes>
@@ -128,7 +126,7 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="1,14,21,187,189,196,198,200,202,204,206,208,210,212,214,218,220,222,224,226,228,6,7,193,18,192,230,168" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="1,14,21,187,189,196,198,200,202,204,206,208,210,212,214,218,220,222,224,226,228,231,233,235,6,7,193,230,168" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>

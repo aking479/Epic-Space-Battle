@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
-    <music desc="" id="242" loop="true" name="7" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
-    <music desc="" id="241" loop="true" name="8" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="251" fixedrot="false" fric="0.2" gid="3" id="243" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="AutoFire" oid="-1" pausable="true" rest="0.0" shared="false" sprite="244" static="false" touchable="true">
         <snippets/>
     </actor>
@@ -153,6 +151,7 @@
             <poly data="4,0,0,23,0,23,26,0,26" density="0.1" fric="0.2" gid="4" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <music desc="" id="251" loop="true" name="Explosion" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" desc="" height="32" id="215" name="Explosion Enemy 1" shared="false" width="32">
         <anim across="5" atlasID="-1" down="1" durations="100,100,100,100,100" height="32" id="0" loop="true" name="Animation 0" numframes="5" originx="0" originy="0" width="160">
             <poly data="4,0,0,31,0,31,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
@@ -177,12 +176,14 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="238" fixedrot="false" fric="0.2" gid="3" id="218" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="ExplosionShip1 Bit" oid="-1" pausable="true" rest="0.0" shared="false" sprite="219" static="false" touchable="true">
         <snippets/>
     </actor>
+    <music desc="" id="254" loop="true" name="General Shooter Spacey Level" oid="15584" pan="0" shared="true" stream="true" type="mp3" volume="1"/>
     <custom-block blocktag="custom-239" blocktype="NORMAL" code="Number((~.say(&quot;Health&quot;, &quot;getHealth&quot;)))" desc="Gets current health." global="false" gui="get health for %0" id="239" message="getHealth" name="getHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <custom-block blocktag="custom-183" blocktype="NORMAL" code="Number((~.say(&quot;Asteroids Movement&quot;, &quot;getHealth&quot;)))" desc="Gets current health." global="false" gui="get health for %0" id="183" message="getHealth" name="getHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
+    <music desc="" id="250" loop="true" name="Gunshot" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <custom-block blocktag="custom-181" blocktype="ACTION" code="~.say(&quot;Asteroids Movement&quot;, &quot;heal&quot;, ~);" desc="Restores given amount of HP." global="false" gui="heal %0 by %1 health" id="181" message="heal" name="heal" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="amount" order="1" type="NUMBER"/>
@@ -302,9 +303,9 @@
         <tile collision="-1" data="" durations="100" frames="58" id="58" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="59" id="59" order="-1"/>
     </tileset>
-    <music desc="" id="162" loop="true" name="Laser" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
-    <music desc="" id="138" loop="true" name="Laser2" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
-    <music desc="" id="185" loop="true" name="Laser3" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music desc="" id="162" loop="true" name="Laser" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music desc="" id="138" loop="true" name="Laser2" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music desc="" id="185" loop="true" name="Laser3" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" desc="" height="360" id="223" name="LoseScreen" shared="false" width="240">
         <anim across="1" atlasID="-1" down="1" durations="100" height="360" id="0" loop="true" name="Animation 0" numframes="1" originx="120" originy="180" width="240">
             <poly data="4,0,0,240,0,240,360,0,360" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
@@ -328,7 +329,6 @@
         </anim>
     </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="30.0" height="1136" id="230" name="MINE" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="2.0"/>
-    <music desc="" id="240" loop="true" name="Music" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" desc="" height="48" id="211" name="NextButton" shared="false" width="96">
         <anim across="1" atlasID="-1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="48" originy="24" width="96">
             <poly data="4,0,0,96,0,96,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
@@ -620,6 +620,7 @@
         <blank name="y" order="3" type="NUMBER"/>
         <blank name="degrees" order="4" type="NUMBER"/>
     </custom-block>
+    <music desc="" id="253" loop="true" name="Screech" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <custom-block blocktag="custom-184" blocktype="ACTION" code="~.say(&quot;Asteroids Movement&quot;, &quot;setHealth&quot;, ~);" desc="Set health - cannot exceed max HP." global="false" gui="set health for %0 to %1" id="184" message="setHealth" name="setHealth" oid="-1" return="VOID" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="amount" order="1" type="NUMBER"/>

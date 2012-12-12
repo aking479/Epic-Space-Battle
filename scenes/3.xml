@@ -17,7 +17,6 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="5" c="false" group="3" id="204" name="HelpMenu1 5" sx="1.0" sy="1.0" x="-339" y="70" z="2"/>
         <actor a="0.0" aid="8" c="false" group="3" id="210" name="NextButton 8" sx="1.0" sy="1.0" x="174" y="361" z="3"/>
         <actor a="0.0" aid="11" c="false" group="3" id="212" name="HomeButton 11" sx="1.0" sy="1.0" x="50" y="361" z="3"/>
         <actor a="0.0" aid="12" c="false" group="3" id="245" name="BlankHelp 12" sx="1.0" sy="1.0" x="40" y="59" z="2"/>

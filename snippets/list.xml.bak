@@ -134,10 +134,11 @@
         <number default="25.0" desc="How fast teh Ship Actor can move." dropdown="" fullname="Ship Speed" hidden="false" id="2" name="_ShipSpeed" order="1"/>
         <game-attribute default="" desc="" dropdown="" fullname="MaxHealth" hidden="false" id="3" name="_MaxHealth" order="2"/>
         <number default="0.0" desc="" dropdown="" fullname="DropPerc" hidden="false" id="4" name="_DropPerc" order="3"/>
+        <boolean default="false" desc="" dropdown="" fullname="Sound" hidden="true" id="5" name="_Sound" order="4"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Updated" enabled="false" id="3" name="step" order="3" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="3" name="step" order="3" repeats="true"/>
             <event displayName="Enters Screen" enabled="true" id="4" name="event-actor-screen" order="4" repeats="true"/>
             <event displayName="Actor - Group" enabled="true" id="7" name="event-collide-actortogroup" order="7" repeats="true"/>
         </events>
@@ -427,6 +428,7 @@
             <event displayName="Spawn" enabled="false" id="2" name="event-custom" order="2" repeats="true"/>
             <event displayName="Win Text" enabled="true" id="3" name="draw" order="3" repeats="true"/>
             <event displayName="Created" enabled="true" id="4" name="init" order="4" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="5" name="step" order="5" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_212" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="229" language="" name="ActorEvents_212" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">

@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <music desc="" id="242" loop="true" name="7" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music desc="" id="241" loop="true" name="8" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="251" fixedrot="false" fric="0.2" gid="3" id="243" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="AutoFire" oid="-1" pausable="true" rest="0.0" shared="false" sprite="244" static="false" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="25" id="244" name="AutoFire" shared="false" width="97">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="25" id="0" loop="true" name="Animation 0" numframes="1" originx="48" originy="12" width="97">
+            <poly data="4,0,0,97,0,97,25,0,25" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" atlasID="-1" down="1" durations="100" height="25" id="1" loop="true" name="Animation 1" numframes="1" originx="48" originy="12" width="97">
+            <poly data="4,0,0,97,0,97,25,0,25" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" atlasID="-1" down="1" durations="100" height="25" id="2" loop="true" name="Animation 2" numframes="1" originx="48" originy="12" width="97">
+            <poly data="4,0,0,97,0,97,25,0,25" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <sprite atlasID="0" default="0" desc="" height="48" id="209" name="BackButton" shared="false" width="96">
         <anim across="1" atlasID="-1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="48" originy="24" width="96">
             <poly data="4,0,0,96,0,96,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
@@ -8,6 +24,14 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="227" fixedrot="false" fric="0.2" gid="3" id="208" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="BackButton" oid="-1" pausable="true" rest="0.0" shared="false" sprite="209" static="false" touchable="true">
         <snippets/>
     </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="252" fixedrot="false" fric="0.2" gid="3" id="245" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="BlankHelp" oid="-1" pausable="true" rest="0.0" shared="false" sprite="246" static="false" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="360" id="246" name="BlankHelp" shared="false" width="240">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="360" id="0" loop="true" name="Animation 0" numframes="1" originx="120" originy="180" width="240">
+            <poly data="4,0,0,240,0,240,360,0,360" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="242" fixedrot="true" fric="0.2" gid="3" id="224" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="BlankMenu" oid="-1" pausable="true" rest="0.0" shared="false" sprite="225" static="true" touchable="true">
         <snippets/>
     </actor>
@@ -68,20 +92,6 @@
                 <prop id="28" list="0" val="0.0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="175">
-                <prop id="1" list="0" val="1"/>
-                <prop id="2" list="0" val="0"/>
-                <prop id="4" list="0" val="0.0"/>
-                <prop id="5" list="0" val="1"/>
-                <prop id="6" list="0" val="1"/>
-                <prop id="7" list="0" val=""/>
-                <prop id="8" list="0" val="true"/>
-                <prop id="9" list="0" val="false"/>
-                <prop id="10" list="0" val="false"/>
-                <prop id="11" list="0" val="0"/>
-                <prop id="12" list="0" val="0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="false" id="174">
                 <prop id="1" list="0" val="-1"/>
                 <prop id="2" list="0" val="3"/>
@@ -94,19 +104,6 @@
                 <prop id="2" list="0" val="false"/>
                 <prop id="3" list="0" val="false"/>
                 <prop id="4" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="false" id="63">
-                <prop id="2" list="0" val="true"/>
-                <prop id="3" list="0" val="false"/>
-                <prop id="4" list="0" val="false"/>
-                <prop id="5" list="0" val="false"/>
-                <prop id="6" list="0" val="false"/>
-                <prop id="7" list="0" val="false"/>
-                <prop id="8" list="0" val="false"/>
-                <prop id="9" list="0" val="false"/>
-                <prop id="10" list="0" val="false"/>
-                <prop id="11" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="false" id="183">
@@ -135,10 +132,10 @@
                 <prop id="28" list="0" val="0.0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="175">
+            <s enabled="true" id="250">
                 <prop id="1" list="0" val="1.0"/>
                 <prop id="2" list="0" val="0"/>
-                <prop id="4" list="0" val="0.0"/>
+                <prop id="4" list="0" val="0"/>
                 <prop id="5" list="0" val="2.0"/>
                 <prop id="6" list="0" val="2.0"/>
                 <prop id="7" list="0" val=""/>
@@ -180,6 +177,9 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="238" fixedrot="false" fric="0.2" gid="3" id="218" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="ExplosionShip1 Bit" oid="-1" pausable="true" rest="0.0" shared="false" sprite="219" static="false" touchable="true">
         <snippets/>
     </actor>
+    <custom-block blocktag="custom-239" blocktype="NORMAL" code="Number((~.say(&quot;Health&quot;, &quot;getHealth&quot;)))" desc="Gets current health." global="false" gui="get health for %0" id="239" message="getHealth" name="getHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
     <custom-block blocktag="custom-183" blocktype="NORMAL" code="Number((~.say(&quot;Asteroids Movement&quot;, &quot;getHealth&quot;)))" desc="Gets current health." global="false" gui="get health for %0" id="183" message="getHealth" name="getHealth" oid="-1" return="NUMBER" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
@@ -328,6 +328,7 @@
         </anim>
     </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="30.0" height="1136" id="230" name="MINE" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="2.0"/>
+    <music desc="" id="240" loop="true" name="Music" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <sprite atlasID="0" default="0" desc="" height="48" id="211" name="NextButton" shared="false" width="96">
         <anim across="1" atlasID="-1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="48" originy="24" width="96">
             <poly data="4,0,0,96,0,96,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
@@ -377,6 +378,9 @@
                 <prop id="3" list="0" val="21"/>
                 <prop id="4" list="0" val="0"/>
                 <prop id="5" list="0" val="416"/>
+                <prop id="6" list="0" val="0"/>
+                <prop id="7" list="0" val="You have no more bombs!"/>
+                <prop id="8" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>

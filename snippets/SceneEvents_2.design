@@ -12,10 +12,13 @@
                 <set-game-val-13 comment="false" x="26" y="67">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-13>
-                <set-game-val-0 comment="false" x="26" y="92">
+                <set-game-val-14 comment="false" x="26" y="92">
+                    <int id="0" val="3"/>
+                </set-game-val-14>
+                <set-game-val-0 comment="false" x="26" y="112">
                     <int id="0" val="0"/>
                 </set-game-val-0>
-                <set-val-216-11 comment="false" x="26" y="112">
+                <set-val-216-11 comment="false" x="26" y="132">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-val-216-11>
             </group>
@@ -124,11 +127,11 @@
                     <or comment="false" id="0" x="0" y="0">
                         <keystate comment="false" id="0" x="0" y="0">
                             <int id="0" val="1"/>
-                            <CONTROL eid="2" id="1"/>
+                            <CONTROL eid="18" id="1"/>
                         </keystate>
                         <keystate comment="false" id="1" x="0" y="0">
                             <int id="0" val="1"/>
-                            <CONTROL eid="12" id="1"/>
+                            <CONTROL eid="16" id="1"/>
                         </keystate>
                     </or>
                 </if>

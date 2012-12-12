@@ -6,10 +6,7 @@
                 <set-game-val-8 comment="false" x="26" y="40">
                     <get-game-val-11 comment="false" id="0" x="0" y="0"/>
                 </set-game-val-8>
-                <set-game-val-1 comment="false" x="26" y="65">
-                    <int id="0" val="2"/>
-                </set-game-val-1>
-                <ignore-screen-tolerance comment="false" x="26" y="85">
+                <ignore-screen-tolerance comment="false" x="26" y="65">
                     <ACTOR eid="this" id="0"/>
                 </ignore-screen-tolerance>
             </group>

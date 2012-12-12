@@ -8,6 +8,18 @@
                         <die comment="false" x="37" y="80">
                             <ACTOR eid="this" id="0"/>
                         </die>
+                        <set-game-val-14 comment="false" x="37" y="107">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-game-val-14 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                        </set-game-val-14>
+                        <set-game-val-0 comment="false" x="37" y="137">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="100"/>
+                            </plus>
+                        </set-game-val-0>
                     </group>
                     <isalive comment="false" id="0" x="0" y="0">
                         <ACTOR eid="this" id="0"/>

@@ -17,8 +17,8 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="2" c="false" group="2" id="196" name="Start Button 2" sx="1.0" sy="1.0" x="113" y="201" z="5"/>
-        <actor a="0.0" aid="3" c="false" group="2" id="198" name="Help Button 3" sx="1.0" sy="1.0" x="113" y="265" z="5"/>
+        <actor a="0.0" aid="2" c="false" group="2" id="196" name="Start Button 2" sx="1.0" sy="1.0" x="58" y="155" z="5"/>
+        <actor a="0.0" aid="3" c="false" group="2" id="198" name="Help Button 3" sx="1.0" sy="1.0" x="165" y="155" z="5"/>
         <actor a="0.0" aid="4" c="false" group="3" id="202" name="Menu 4" sx="1.0" sy="1.0" x="40" y="60" z="4"/>
         <actor a="0.0" aid="5" c="false" group="3" id="204" name="HelpMenu1 5" sx="1.0" sy="1.0" x="40" y="59" z="2"/>
         <actor a="0.0" aid="6" c="false" group="3" id="206" name="HelpMenu2 6" sx="1.0" sy="1.0" x="40" y="60" z="0"/>
@@ -26,6 +26,8 @@
         <actor a="0.0" aid="9" c="false" group="3" id="208" name="BackButton 9" sx="1.0" sy="1.0" x="50" y="362" z="1"/>
         <actor a="0.0" aid="10" c="false" group="3" id="212" name="HomeButton 10" sx="1.0" sy="1.0" x="174" y="362" z="1"/>
         <actor a="0.0" aid="11" c="false" group="3" id="212" name="HomeButton 11" sx="1.0" sy="1.0" x="50" y="361" z="3"/>
+        <actor a="0.0" aid="12" c="false" group="0" id="1" name="Player Ship 12" sx="1.0" sy="1.0" x="142" y="321" z="5"/>
+        <actor a="0.0" aid="16" c="false" group="3" id="243" name="AutoFire 16" sx="1.0" sy="1.0" x="63" y="210" z="5"/>
     </actors>
     <snippets/>
     <terrain/>

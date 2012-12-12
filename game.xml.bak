@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<game accelFramerate="0" adsPosition="0" aheight="480" airCert="" airPass="" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="320" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.company.gamename" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="" cws-icon128="" cws-icon16="" cws-name="" cws-version="" default="1" defaultFramerate="30" desc="" deviceOS="6.0" engine="30" format="2.0" gameid="15674" height="480" kit="false" lockURL="" mochi="" multitouch="true" name="Epic Space Battle V0.1" ngID="" ngKey="" onlineID="24297" orientation="0" preloaderstyle="0" products="" projectType="" scale="1.0" showAds="false" simulatorOS="6.0" splashStyle="0" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" thumbstickStyle="0" useGlossyIcon="false" width="320">
+<game accelFramerate="0" adsPosition="0" aheight="480" airCert="" airPass="" appName="My Game" appType="0" author="" authorURL="" autoRotate="false" awidth="320" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" borderColor="-12303292" borderThickness="2" bundleID="com.company.gamename" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="" cws-icon128="" cws-icon16="" cws-name="" cws-version="" default="1" defaultFramerate="30" desc="" deviceOS="6.0" engine="30" format="2.0" gameid="15674" height="480" kit="false" lockURL="" mochi="" multitouch="true" name="Epic Space Battle V0.12" ngID="" ngKey="" onlineID="24297" orientation="0" preloaderstyle="0" products="" projectType="" scale="1.0" showAds="false" simulatorOS="6.0" splashStyle="0" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" thumbstickStyle="0" useGlossyIcon="false" width="320">
     <folders>
         <group desc="Enemies for the game." id="0" name="Enemies" type="actor">
             <r id="235"/>
@@ -17,35 +17,33 @@
             <r id="226"/>
         </group>
         <group desc="" id="2" name="Buttons and Menus" type="actor">
-            <r id="220"/>
             <r id="204"/>
-            <r id="222"/>
             <r id="206"/>
             <r id="200"/>
             <r id="202"/>
-            <r id="212"/>
             <r id="196"/>
             <r id="198"/>
-            <r id="208"/>
-            <r id="210"/>
             <r id="224"/>
+            <r id="220"/>
+            <r id="222"/>
+            <r id="212"/>
+            <r id="245"/>
+            <r id="208"/>
+            <r id="243"/>
+            <r id="210"/>
         </group>
-        <group desc="" id="3" name="Actions" type="snippet">
-            <r id="235"/>
-            <r id="233"/>
-        </group>
+        <group desc="" id="3" name="Actions" type="snippet"/>
         <group desc="" id="4" name="Drawing" type="snippet">
             <r id="234"/>
         </group>
+        <group desc="" id="5" name="Health" type="snippet">
+            <r id="250"/>
+        </group>
     </folders>
     <packs>
-        <pack desc="Provides simple health functionality for action games.&#10;&lt;br&gt;&lt;br&gt;&#10;Attach Health t to any actor that wishes to take part in the health system. Inflicts Damage adds the ability for one actor to harm another." id="17" name="Space Shooter Health Pack" oid="-1" resources="" snippets="85,117,86,175,191,174,172,82,176,193,195"/>
-        <pack desc="Helps you drawing a score inside a HUD. Create a scoring game attribute before using." id="16" name="Space Shooter Scoring Pack" oid="-1" resources="" snippets="171,63,62"/>
-        <pack desc="" id="19" name="Space Shooter Game Start Pack" oid="-1" resources="" snippets="187,141"/>
-        <pack desc="Contains various types of motion. Primarily meant for overhead games or for enemies in side-scrolling games." id="18" name="Space Shooter Motion Pack" oid="-1" resources="" snippets="129,177,192,183,180"/>
-        <pack desc="" id="20" name="Exploding Actor" oid="34584" resources="" snippets="235,233"/>
-        <pack desc="A collection of action-related Behaviors used in the Space Shooter kit.&#10;&lt;br&gt;&#10;Behaviors include Fire Bullet, Do on Key Press, Die After Time, and Switch Animation." id="12" name="Space Shooter Action Pack" oid="-1" resources="" snippets="205,154,156,64,157,158,162"/>
-        <pack desc="Make the camera follow an actor. Enables what we call scrolling. &lt;br&gt;&lt;br&gt;&#10;The only resource in the pack is the Camera Follower, which is used for the Auto Scrolling Behavior." id="14" name="Space Shooter Camera Pack" oid="-1" resources="" snippets="116"/>
+        <pack desc="Provides simple health functionality for action games.&#10;&lt;br&gt;&lt;br&gt;&#10;Attach Health t to any actor that wishes to take part in the health system. Inflicts Damage adds the ability for one actor to harm another." id="17" name="Space Shooter Health Pack" oid="-1" resources="" snippets="174,82,193,195"/>
+        <pack desc="Contains various types of motion. Primarily meant for overhead games or for enemies in side-scrolling games." id="18" name="Space Shooter Motion Pack" oid="-1" resources="" snippets="129,177,183,192,180"/>
+        <pack desc="A collection of action-related Behaviors used in the Space Shooter kit.&#10;&lt;br&gt;&#10;Behaviors include Fire Bullet, Do on Key Press, Die After Time, and Switch Animation." id="12" name="Space Shooter Action Pack" oid="-1" resources="" snippets="205,154,158"/>
     </packs>
     <groups>
         <group desc="" id="4" name="Enemies"/>
@@ -56,10 +54,10 @@
         <group desc="Screen icons that are designed to NOT interact with anything else on screen." id="9" name="Icons"/>
     </groups>
     <cgroups>
-        <cgroup g1="5" g2="4"/>
-        <cgroup g1="6" g2="0"/>
-        <cgroup g1="4" g2="0"/>
         <cgroup g1="0" g2="8"/>
+        <cgroup g1="0" g2="4"/>
+        <cgroup g1="0" g2="6"/>
+        <cgroup g1="4" g2="5"/>
     </cgroups>
     <input>
         <key id="0" keyname="RIGHT" name="Right" vk="39" vks="39"/>
@@ -78,7 +76,9 @@
         <key id="13" keyname="D" name="D" vk="68" vks="68"/>
         <key id="14" keyname="A" name="A" vk="65" vks="65"/>
         <key id="15" keyname="P" name="P" vk="80" vks="80"/>
+        <key id="17" keyname="Z" name="Z" vk="90" vks="90"/>
         <key id="16" keyname="SHIFT" name="Shift" vk="16" vks="16"/>
+        <key id="18" keyname="X" name="X" vk="88" vks="88"/>
     </input>
     <attcats>
         <cat id="0" name="Health"/>
@@ -93,12 +93,14 @@
         <bool cid="-1" id="13" name="GameOver?" save="true" value="false"/>
         <bool cid="1" id="10" name="Sound?" save="true" value="true"/>
         <number cid="0" id="8" name="Health" save="true" value="100.0"/>
-        <number cid="-1" id="14" name="Bombs" save="true" value="0"/>
+        <number cid="-1" id="14" name="Bombs" save="true" value="0.0"/>
         <bool cid="0" id="7" name="First Level" save="true" value="false"/>
+        <bool cid="-1" id="17" name="AutoFire?" save="true" value="true"/>
         <number cid="-1" id="11" name="MaxHealth" save="true" value="100.0"/>
         <bool cid="-1" id="3" name="GameStart" save="true" value="true"/>
-        <number cid="-1" id="15" name="Wave" save="true" value="0"/>
+        <number cid="-1" id="16" name="Upgrade Level" save="true" value="0.0"/>
         <bool cid="-1" id="12" name="WinLose" save="true" value="false"/>
+        <number cid="-1" id="15" name="Wave" save="true" value="0.0"/>
         <bool cid="1" id="9" name="Pause" save="true" value="false"/>
         <number cid="-1" id="0" name="Score" save="true" value="0.0"/>
     </attributes>
@@ -126,7 +128,7 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="1,14,21,187,189,196,198,200,202,204,206,208,210,212,214,218,220,222,224,226,228,231,233,235,6,7,193,230,168" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="1,14,21,187,189,196,198,200,202,204,206,208,210,212,214,218,220,222,224,226,228,231,233,235,243,245,6,7,193,230,168" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>

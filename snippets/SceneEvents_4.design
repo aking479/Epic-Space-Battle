@@ -57,126 +57,151 @@
         <draw comment="false" x="45" y="28">
             <group eventID="4" id="-1">
                 <set-font-new comment="false" x="56" y="53">
-                    <FONT eid="11" id="0"/>
+                    <FONT eid="168" id="0"/>
                 </set-font-new>
-                <set-color comment="false" x="56" y="80">
-                    <color b="51" g="204" id="0" r="0"/>
-                </set-color>
-                <drawfill-rect comment="false" x="56" y="107">
-                    <int id="0" val="1"/>
-                    <int id="1" val="14"/>
-                    <int id="2" val="450"/>
-                    <int id="3" val="150"/>
-                    <int id="4" val="20"/>
-                </drawfill-rect>
-                <set-color comment="false" x="56" y="134">
-                    <color b="0" g="0" id="0" r="0"/>
-                </set-color>
-                <drawfill-rect comment="false" x="56" y="161">
-                    <int id="0" val="1"/>
-                    <int id="1" val="16"/>
-                    <int id="2" val="452"/>
-                    <int id="3" val="146"/>
-                    <int id="4" val="16"/>
-                </drawfill-rect>
-                <set-color comment="false" x="56" y="188">
-                    <color b="51" g="255" id="0" r="51"/>
-                </set-color>
-                <drawfill-rect comment="false" x="56" y="215">
-                    <int id="0" val="1"/>
-                    <int id="1" val="16"/>
-                    <int id="2" val="452"/>
-                    <times comment="false" id="3" x="0" y="0">
+                <draw-text comment="false" x="56" y="80">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Score: "/>
+                        <get-game-val-0 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </scene-wh>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <get-font-width comment="false" id="0" x="0" y="0">
+                                <str-combine comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="Score: "/>
+                                    <get-game-val-0 comment="false" id="1" x="0" y="0"/>
+                                </str-combine>
+                            </get-font-width>
+                            <int id="1" val="4"/>
+                        </plus>
+                    </minus>
+                    <int id="2" val="0"/>
+                </draw-text>
+                <draw-text comment="false" x="56" y="125">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Bombs:"/>
+                        <get-game-val-14 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                    <int id="1" val="4"/>
+                    <int id="2" val="0"/>
+                </draw-text>
+                <draw-text comment="false" x="56" y="155">
+                    <int id="0" val="Use the WASD or"/>
+                    <minus comment="false" id="1" x="0" y="0">
                         <div comment="false" id="0" x="0" y="0">
-                            <get-game-att comment="false" id="0" x="0" y="0">
-                                <int id="0" val="Player Health"/>
-                            </get-game-att>
-                            <get-game-att comment="false" id="1" x="0" y="0">
-                                <int id="0" val="Maximum Player Health"/>
-                            </get-game-att>
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </scene-wh>
+                            <int id="1" val="2"/>
                         </div>
-                        <int id="1" val="146"/>
-                    </times>
-                    <int id="4" val="16"/>
-                </drawfill-rect>
-                <if comment="false" x="56" y="257">
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-font-width comment="false" id="0" x="0" y="0">
+                                <int id="0" val="Use the WASD or"/>
+                            </get-font-width>
+                            <int id="1" val="2"/>
+                        </div>
+                    </minus>
+                    <int id="2" val="160"/>
+                </draw-text>
+                <draw-text comment="false" x="56" y="198">
+                    <int id="0" val="ARROW keys to find"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <div comment="false" id="0" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </scene-wh>
+                            <int id="1" val="2"/>
+                        </div>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-font-width comment="false" id="0" x="0" y="0">
+                                <int id="0" val="ARROW keys to find"/>
+                            </get-font-width>
+                            <int id="1" val="2"/>
+                        </div>
+                    </minus>
+                    <int id="2" val="200"/>
+                </draw-text>
+                <draw-text comment="false" x="56" y="241">
+                    <int id="0" val="out what each of the"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <div comment="false" id="0" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </scene-wh>
+                            <int id="1" val="2"/>
+                        </div>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-font-width comment="false" id="0" x="0" y="0">
+                                <int id="0" val="out what each of the"/>
+                            </get-font-width>
+                            <int id="1" val="2"/>
+                        </div>
+                    </minus>
+                    <int id="2" val="240"/>
+                </draw-text>
+                <draw-text comment="false" x="56" y="284">
+                    <int id="0" val="powerups do!"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <div comment="false" id="0" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </scene-wh>
+                            <int id="1" val="2"/>
+                        </div>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-font-width comment="false" id="0" x="0" y="0">
+                                <int id="0" val="powerups do!"/>
+                            </get-font-width>
+                            <int id="1" val="2"/>
+                        </div>
+                    </minus>
+                    <int id="2" val="280"/>
+                </draw-text>
+                <if comment="false" x="56" y="327">
                     <group eventID="4" id="-1">
-                        <set-val-208-4 comment="false" x="67" y="282">
-                            <int id="0" val="You Win!"/>
-                        </set-val-208-4>
-                        <draw-text comment="false" x="67" y="302">
-                            <get-val-208-4 comment="false" id="0" x="0" y="0"/>
-                            <minus comment="false" id="1" x="0" y="0">
-                                <div comment="false" id="0" x="0" y="0">
-                                    <screen-wh comment="false" id="0" x="0" y="0">
-                                        <int id="0" val="0"/>
-                                    </screen-wh>
-                                    <int id="1" val="2"/>
-                                </div>
-                                <div comment="false" id="1" x="0" y="0">
-                                    <get-font-width comment="false" id="0" x="0" y="0">
-                                        <get-val-208-4 comment="false" id="0" x="0" y="0"/>
-                                    </get-font-width>
-                                    <int id="1" val="2"/>
-                                </div>
-                            </minus>
-                            <minus comment="false" id="2" x="0" y="0">
-                                <div comment="false" id="0" x="0" y="0">
-                                    <screen-wh comment="false" id="0" x="0" y="0">
-                                        <int id="0" val="1"/>
-                                    </screen-wh>
-                                    <int id="1" val="2"/>
-                                </div>
-                                <div comment="false" id="1" x="0" y="0">
-                                    <get-font-width comment="false" id="0" x="0" y="0">
-                                        <get-val-208-4 comment="false" id="0" x="0" y="0"/>
-                                    </get-font-width>
-                                    <int id="1" val="2"/>
-                                </div>
-                            </minus>
-                        </draw-text>
+                        <if comment="false" x="67" y="357">
+                            <group eventID="10" id="-1">
+                                <draw-text comment="false" x="78" y="382">
+                                    <get-val-231-5 comment="false" id="0" x="0" y="0"/>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <div comment="false" id="0" x="0" y="0">
+                                            <scene-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                            </scene-wh>
+                                            <int id="1" val="2"/>
+                                        </div>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <get-font-width comment="false" id="0" x="0" y="0">
+                                                <get-val-231-5 comment="false" id="0" x="0" y="0"/>
+                                            </get-font-width>
+                                            <int id="1" val="2"/>
+                                        </div>
+                                    </minus>
+                                    <minus comment="false" id="2" x="0" y="0">
+                                        <div comment="false" id="0" x="0" y="0">
+                                            <scene-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                            </scene-wh>
+                                            <int id="1" val="2"/>
+                                        </div>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <get-font-height comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="2"/>
+                                        </div>
+                                    </minus>
+                                </draw-text>
+                            </group>
+                            <get-val-231-6 comment="false" id="0" x="0" y="0"/>
+                        </if>
                     </group>
-                    <get-val-208-2 comment="false" id="0" x="0" y="0"/>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-game-val-14 comment="false" id="1" x="0" y="0"/>
+                    </moreeq>
                 </if>
-                <else-if comment="false" x="56" y="357">
-                    <group eventID="4" id="-1">
-                        <set-val-208-4 comment="false" x="67" y="382">
-                            <int id="0" val="You LOSE!"/>
-                        </set-val-208-4>
-                        <draw-text comment="false" x="67" y="402">
-                            <get-val-208-4 comment="false" id="0" x="0" y="0"/>
-                            <minus comment="false" id="1" x="0" y="0">
-                                <div comment="false" id="0" x="0" y="0">
-                                    <screen-wh comment="false" id="0" x="0" y="0">
-                                        <int id="0" val="0"/>
-                                    </screen-wh>
-                                    <int id="1" val="2"/>
-                                </div>
-                                <div comment="false" id="1" x="0" y="0">
-                                    <get-font-width comment="false" id="0" x="0" y="0">
-                                        <get-val-208-4 comment="false" id="0" x="0" y="0"/>
-                                    </get-font-width>
-                                    <int id="1" val="2"/>
-                                </div>
-                            </minus>
-                            <minus comment="false" id="2" x="0" y="0">
-                                <div comment="false" id="0" x="0" y="0">
-                                    <screen-wh comment="false" id="0" x="0" y="0">
-                                        <int id="0" val="1"/>
-                                    </screen-wh>
-                                    <int id="1" val="2"/>
-                                </div>
-                                <div comment="false" id="1" x="0" y="0">
-                                    <get-font-width comment="false" id="0" x="0" y="0">
-                                        <get-val-208-4 comment="false" id="0" x="0" y="0"/>
-                                    </get-font-width>
-                                    <int id="1" val="2"/>
-                                </div>
-                            </minus>
-                        </draw-text>
-                    </group>
-                    <get-val-208-3 comment="false" id="0" x="0" y="0"/>
-                </else-if>
             </group>
         </draw>
     </group>
@@ -184,12 +209,9 @@
     <group eventID="4" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="4" id="-1">
-                <create-actor3 comment="false" x="26" y="40">
-                    <ACTORTYPE eid="1" id="0"/>
-                    <int id="1" val="142"/>
-                    <int id="2" val="416"/>
-                    <int id="3" val="0"/>
-                </create-actor3>
+                <set-game-val-14 comment="false" x="26" y="40">
+                    <int id="0" val="99"/>
+                </set-game-val-14>
             </group>
         </init>
     </group>

@@ -42,7 +42,7 @@
     </folders>
     <packs>
         <pack desc="Provides simple health functionality for action games.&#10;&lt;br&gt;&lt;br&gt;&#10;Attach Health t to any actor that wishes to take part in the health system. Inflicts Damage adds the ability for one actor to harm another." id="17" name="Space Shooter Health Pack" oid="-1" resources="" snippets="174,82,193,195"/>
-        <pack desc="Contains various types of motion. Primarily meant for overhead games or for enemies in side-scrolling games." id="18" name="Space Shooter Motion Pack" oid="-1" resources="" snippets="129,177,183,192,180"/>
+        <pack desc="Contains various types of motion. Primarily meant for overhead games or for enemies in side-scrolling games." id="18" name="Space Shooter Motion Pack" oid="-1" resources="" snippets="129,177,192,183,180"/>
         <pack desc="A collection of action-related Behaviors used in the Space Shooter kit.&#10;&lt;br&gt;&#10;Behaviors include Fire Bullet, Do on Key Press, Die After Time, and Switch Animation." id="12" name="Space Shooter Action Pack" oid="-1" resources="" snippets="205,154,158"/>
     </packs>
     <groups>

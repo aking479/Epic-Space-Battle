@@ -111,8 +111,8 @@
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_205_205" desc="Allows an Actor to fire a wave of bullets on a periodic basis. You can set the number of shots, the interval between shots, the shot angle, and the distance between each shot in a volley." description="Allows an Actor to fire a wave of bullets on a periodic basis. You can set the number of shots, the interval between shots, the shot angle, and the distance between each shot in a volley." design="true" drawOrder="0" id="205" language="" name="Bullet Wave" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <actortype default="" desc="Select the actor type you want to act as bullets." dropdown="" fullname="Bullet" hidden="false" id="1" name="Bullet" order="1"/>
         <number default="0" desc="The number of seconds between each volley. Use a positive number." dropdown="" fullname="Interval" hidden="false" id="16" name="_Interval" order="10"/>
+        <actortype default="" desc="Select the actor type you want to act as bullets." dropdown="" fullname="Bullet" hidden="false" id="1" name="Bullet" order="1"/>
         <number default="0.0" desc="The number of bullets you want the actor to fire." dropdown="" fullname="Number of Bullets" hidden="false" id="4" name="NumberofBullets" order="2"/>
         <number default="0.0" desc="The angle of the shot." dropdown="North=90&#10;North East=45&#10;East=0&#10;South East=315&#10;South=270&#10;South West=225&#10;West=180&#10;North West=135" fullname="Shot Angle" hidden="false" id="6" name="ShotAngle" order="3"/>
         <number default="0.0" desc="The amount of space, and hence the angle to adjust the shot by, that you want between bullets." dropdown="" fullname="Bullet Spread" hidden="false" id="7" name="BulletSpread" order="4"/>
@@ -120,8 +120,8 @@
         <number default="0.0" desc="The speed of the shot. Stick to whole numbers. Anything above 60 is pretty fast." dropdown="" fullname="Shot Speed" hidden="false" id="10" name="ShotSpeed" order="6"/>
         <number default="0.0" desc="This is the angle to reset the Shot Angle to after each spread shot." dropdown="North=90&#10;North East=45&#10;East=0&#10;South East=315&#10;South=270&#10;South West=225&#10;West=180&#10;North West=135" fullname="Shot Angle Reset" hidden="false" id="12" name="ShotAngleReset" order="7"/>
         <number default="0.0" desc="The Y offset to shift the initial position of the shot by. Set to a negative number if the actor is firing upward (in a negative Y direction). Set to a positive number if the actor is firing downward (in a positive Y direction)." dropdown="" fullname="YOffset" hidden="false" id="14" name="YOffset" order="8"/>
-        <number default="0.0" desc="The initial angle of the shot and the reference point from which other bullets will be fired from based on the Shot Angle value." dropdown="" fullname="Initial Shot Angle" hidden="true" id="15" name="_InitialShotAngle" order="9"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0.0" desc="The initial angle of the shot and the reference point from which other bullets will be fired from based on the Shot Angle value." dropdown="" fullname="Initial Shot Angle" hidden="true" id="15" name="_InitialShotAngle" order="9"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
@@ -160,8 +160,8 @@
         <number default="0" desc="" dropdown="" fullname="startDelay" hidden="true" id="11" name="startDelay" order="0"/>
         <boolean default="false" desc="" dropdown="" fullname="Random Start Delay?" hidden="false" id="12" name="randomStart" order="0"/>
         <boolean default="false" desc="Default starting direction is to the right or down, depending on the Horizontal or Vertical selection.  Check this box to reverse the starting direction." dropdown="" fullname="Reverse Start Direction" hidden="false" id="14" name="reverseStart" order="0"/>
-        <number default="0.0" desc="Amount of time to delay between each cycle in seconds." dropdown="" fullname="Delay Between Cycles" hidden="false" id="15" name="betweenDelay" order="0"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <number default="0.0" desc="Amount of time to delay between each cycle in seconds." dropdown="" fullname="Delay Between Cycles" hidden="false" id="15" name="betweenDelay" order="0"/>
         <boolean default="false" desc="" dropdown="" fullname="waiting" hidden="true" id="17" name="waiting" order="0"/>
         <number default="0.0" desc="" dropdown="" fullname="step" hidden="true" id="16" name="step" order="0"/>
         <blocks/>
@@ -204,16 +204,16 @@
             <event displayName="Actor - Type" enabled="true" id="6" name="event-collide-actortotype" order="6" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_84_84_LivesDetector" desc="This Behavior detects whether an actor has lost a life and, if so, sends a message to the Lives Counter Behavior, telling it to subtract a single life from the counter that tracks the number of lives the player actor has." description="This Behavior detects whether an actor has lost a life and, if so, sends a message to the Lives Counter Behavior, telling it to subtract a single life from the counter that tracks the number of lives the player actor has." design="true" drawOrder="0" id="84" language="" name="Lives Detector" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet attachedevent="false" class="scripts.Design_221_221_HealthBar" desc="" description="" design="true" drawOrder="0" id="221" language="" name="HealthBar" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
         </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_84_84_LivesDetector" desc="This Behavior detects whether an actor has lost a life and, if so, sends a message to the Lives Counter Behavior, telling it to subtract a single life from the counter that tracks the number of lives the player actor has." description="This Behavior detects whether an actor has lost a life and, if so, sends a message to the Lives Counter Behavior, telling it to subtract a single life from the counter that tracks the number of lives the player actor has." design="true" drawOrder="0" id="84" language="" name="Lives Detector" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_200" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="222" language="" name="ActorEvents_200" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
@@ -275,15 +275,6 @@
             <event displayName="Custom Event" enabled="true" id="1" name="event-custom" order="1" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_82_82_ShowLivesHUD" desc="This Behavior displays the maximum and current number of lives the player's actor has." description="This Behavior displays the maximum and current number of lives the player's actor has." design="true" drawOrder="0" id="82" language="" name="Show Lives HUD" oid="-1" package="" scenespecific="false" shared="false" type="scene">
-        <number default="0.0" desc="The current number of lives the player's actor has." dropdown="" fullname="CurrNumLives" hidden="true" id="2" name="CurrNumLives" order="1"/>
-        <number default="0.0" desc="The maximum number of lives the player's actor can have." dropdown="" fullname="MaxNumLives" hidden="true" id="3" name="MaxNumLives" order="2"/>
-        <font default="" desc="The font to use for this display." dropdown="" fullname="Font to Use" hidden="false" id="4" name="FonttoUse" order="3"/>
-        <number default="0" desc="The X position on screen." dropdown="" fullname="X Position" hidden="false" id="5" name="XPosition" order="4"/>
-        <number default="0" desc="The Y position on screen." dropdown="" fullname="Y Position" hidden="false" id="6" name="YPosition" order="5"/>
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet attachedevent="false" class="scripts.Design_219_219_RandomSpawn" desc="" description="" design="true" drawOrder="0" id="219" language="" name="Random Spawn" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
         <actortype default="" desc="What is the enemy being spawned?" dropdown="" fullname="Enemy Spawned" hidden="false" id="1" name="_EnemySpawned" order="0"/>
         <number default="0.0" desc="The speed that the spawn comes at" dropdown="" fullname="Enemy Speed" hidden="true" id="2" name="_EnemySpeed" order="1"/>
@@ -299,6 +290,15 @@
             <event displayName="After N secs" enabled="true" id="7" name="event-delay" order="7" repeats="true"/>
             <event displayName="Spawn2" enabled="true" id="8" name="event-custom" order="8" repeats="true"/>
         </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_82_82_ShowLivesHUD" desc="This Behavior displays the maximum and current number of lives the player's actor has." description="This Behavior displays the maximum and current number of lives the player's actor has." design="true" drawOrder="0" id="82" language="" name="Show Lives HUD" oid="-1" package="" scenespecific="false" shared="false" type="scene">
+        <number default="0.0" desc="The current number of lives the player's actor has." dropdown="" fullname="CurrNumLives" hidden="true" id="2" name="CurrNumLives" order="1"/>
+        <number default="0.0" desc="The maximum number of lives the player's actor can have." dropdown="" fullname="MaxNumLives" hidden="true" id="3" name="MaxNumLives" order="2"/>
+        <font default="" desc="The font to use for this display." dropdown="" fullname="Font to Use" hidden="false" id="4" name="FonttoUse" order="3"/>
+        <number default="0" desc="The X position on screen." dropdown="" fullname="X Position" hidden="false" id="5" name="XPosition" order="4"/>
+        <number default="0" desc="The Y position on screen." dropdown="" fullname="Y Position" hidden="false" id="6" name="YPosition" order="5"/>
+        <blocks/>
+        <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_196" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="212" language="" name="ActorEvents_196" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>

@@ -10,7 +10,7 @@
                     <ACTOR eid="this" id="0"/>
                 </ignore-screen-tolerance>
                 <set-volume comment="false" x="26" y="92">
-                    <int id="0" val="0"/>
+                    <int id="0" val="70"/>
                 </set-volume>
                 <set-val-207-5 comment="false" x="26" y="112">
                     <false comment="false" id="0" x="0" y="0"/>
@@ -26,38 +26,37 @@
                     <group eventID="6" id="-1">
                         <if comment="false" x="37" y="73">
                             <group eventID="3" id="-1">
-                                <stop-sounds comment="false" x="48" y="98"/>
-                                <set-volume comment="false" x="48" y="118">
+                                <set-volume comment="false" x="48" y="98">
                                     <int id="0" val="0"/>
                                 </set-volume>
-                                <set-volume-channel comment="false" x="48" y="138">
+                                <set-volume-channel comment="false" x="48" y="118">
                                     <int id="0" val="0"/>
                                     <int id="1" val="1"/>
                                 </set-volume-channel>
-                                <set-volume-channel comment="false" x="48" y="158">
+                                <set-volume-channel comment="false" x="48" y="138">
                                     <int id="0" val="0"/>
                                     <int id="1" val="2"/>
                                 </set-volume-channel>
-                                <set-val-207-5 comment="false" x="48" y="178">
+                                <set-val-207-5 comment="false" x="48" y="158">
                                     <false comment="false" id="0" x="0" y="0"/>
                                 </set-val-207-5>
                             </group>
                             <get-val-207-5 comment="false" id="0" x="0" y="0"/>
                         </if>
-                        <else comment="false" x="37" y="215">
+                        <else comment="false" x="37" y="195">
                             <group eventID="3" id="-1">
-                                <set-volume comment="false" x="48" y="235">
+                                <set-volume comment="false" x="48" y="215">
                                     <int id="0" val="70"/>
                                 </set-volume>
-                                <set-volume-channel comment="false" x="48" y="255">
+                                <set-volume-channel comment="false" x="48" y="235">
                                     <int id="0" val="150"/>
                                     <int id="1" val="1"/>
                                 </set-volume-channel>
-                                <set-volume-channel comment="false" x="48" y="275">
+                                <set-volume-channel comment="false" x="48" y="255">
                                     <int id="0" val="50"/>
                                     <int id="1" val="2"/>
                                 </set-volume-channel>
-                                <set-val-207-5 comment="false" x="48" y="295">
+                                <set-val-207-5 comment="false" x="48" y="275">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-207-5>
                             </group>
